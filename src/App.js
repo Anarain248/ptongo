@@ -1,7 +1,15 @@
+import {useEffect, useState, } from 'react'
+import logo from './arjun-logo.png';
+import fit from './fitness.jpg'
+
 function App() {
   return (
-    <h1>Hello from App</h1>
+    <>
+    
+    </>
   );
-}
+
+  }
+
 
 export default App;
