@@ -1,8 +1,10 @@
 import {useEffect, useState, } from 'react'
 import logo from './arjun-logo.png';
-import fit from './fitness.jpg';
+
 import Navigation from './components/Navigation';
 import Home from './components/Home';
+import Footer from './footer'
+
 
 
 function App() {
@@ -10,10 +12,15 @@ function App() {
   return (
     <div className="App">
       <Navigation />
+
       <div className="webContent">
         <Home />
+
       </div>
+
+      <Footer />
     </div>
+
   );
 
   }

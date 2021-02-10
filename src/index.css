@@ -10,7 +10,8 @@
 
 .navigation {
     display:flex;
-    height: 80px;
+    justify-content: space-evenly;
+    height: 60px;
     align-items: center;
     width: 100%;
    background-color: black;
@@ -24,16 +25,53 @@
       color: cyan;
   }
   .navigation .setlinks {
-    margin-left: auto;
+    margin-left: 30px;
   }
   .webContent {
       max-width: 600px;
   }
   .navigation a {
-      margin-left: 300px;
+      margin-left: 100px;
       padding: 20px;
-  }
+      height: 50px;
 
+  }
+.pic {
+    position: relative;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+    margin-left: 700px;
+    margin-top: -3000px;
+    margin-bottom: 220px;
+}
   body {
       background-color: lightgray;
+  }
+
+  .exercise-preview:hover {
+      color: darkblue;
+  }
+.search {
+    padding: 12px;
+    margin-left: 400px;
+    font-size: 15px;
+
+}
+.header {
+      font-size: 30px;
+      color: #00008b;
+      font-weight: bold;
+  }
+
+  .exercise-preview h2 {
+      font-size: 20px;
+      color: darkblue;
+  }
+  .exercise-preview {
+      font-weight: bold;
+      margin: 20px 0;
+      border-bottom: 1px solid black;
+      padding: 20px;
+      text-align: center;
   }
