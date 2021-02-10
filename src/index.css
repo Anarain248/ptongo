@@ -75,3 +75,7 @@
       padding: 20px;
       text-align: center;
   }
+
+  .exercise-preview a{
+      text-decoration: none;
+  }

@@ -1,25 +1,30 @@
 {
-    "exercises": [
-        {
-            "name": "Barbell Squats",
-            "type": "Compound",
-            "reps": "Strength: 3-5 reps, Hypertrophy: 8-12 reps, Endurance: 15-25 reps', PrimaryMuscleWorked: 'Quads, HamStrings, Glutes",
-            "PrimaryMuscleWorked": "Quads, HamStrings, Glutes",
-            "id": 1
-        },
-        {
-            "name": "Bench Press",
-            "type": "Compound",
-            "reps": "Strength: 3-5 reps, Hypertrophy: 8-12 reps, Endurance: 15-25 reps', PrimaryMuscleWorked: 'Quads, HamStrings, Glutes",
-            "PrimaryMuscleWorked": "Chest, Shoulders, Triceps",
-            "id": 2
-        },
-        {
-            "name": "Deadlifts",
-            "type": "Compound",
-            "reps": "Strength: 3-5 reps, Hypertrophy: 8-12 reps, Endurance: 15-25 reps', PrimaryMuscleWorked: 'Quads, HamStrings, Glutes",
-            "PrimaryMuscleWorked": "HamStrings, Glutes",
-            "id": 3
-        }
-    ]
+  "exercises": [
+    {
+      "name": "Barbell Squats",
+      "type": "Compound",
+      "reps": "Strength: 3-5 reps, Hypertrophy: 8-12 reps, Endurance: 15-25 reps', PrimaryMuscleWorked: 'Quads, HamStrings, Glutes",
+      "PrimaryMuscleWorked": "Quads, HamStrings, Glutes",
+      "id": 1
+    },
+    {
+      "name": "Bench Press",
+      "type": "Compound",
+      "reps": "Strength: 3-5 reps, Hypertrophy: 8-12 reps, Endurance: 15-25 reps', PrimaryMuscleWorked: 'Quads, HamStrings, Glutes",
+      "PrimaryMuscleWorked": "Chest, Shoulders, Triceps",
+      "id": 2
+    },
+    {
+      "name": "Deadlifts",
+      "type": "Compound",
+      "reps": "Strength: 3-5 reps, Hypertrophy: 8-12 reps, Endurance: 15-25 reps', PrimaryMuscleWorked: 'Quads, HamStrings, Glutes",
+      "PrimaryMuscleWorked": "HamStrings, Glutes",
+      "id": 3
+    },
+    {
+      "name": "Lunges",
+      "type": "Quads, Hamstrings, Glutes",
+      "id": 4
+    }
+  ]
 }
