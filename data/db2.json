@@ -1,32 +1,46 @@
 {
-    "foods": [
-      {
-        "name": "Apple",
-        "PrimaryMacro": "Carbohydrates",
-        "TotalMacros": "25 grams Carbohydrates",
-        "TotalCalories": "95 calories",
-        "id": 1
-      },
-      {
-        "name": "Chicken",
-        "PrimaryMacro": "Protein",
-        "TotalMacros": "40 grams Protein per 1 cup",
-        "TotalCalories": "340 calories",
-        "id": 2
-      },
-      {
-        "name": "Brown Rice",
-        "PrimaryMacro": "Carbohydrates",
-        "TotalMacros": "45 grams Carbohydrates",
-        "TotalCalories": "250 calories",
-        "id": 3
-      },
-      {
-        "name": "Shrimp",
-        "PrimaryMacro": "Protein",
-        "TotalMacros": "20 grams Protein",
-        "TotalCalories": "90 calories",
-        "id": 4
-      }
-    ]
-  }
+  "foods": [
+    {
+      "name": "Apple",
+      "PrimaryMacro": "Carbohydrates",
+      "TotalMacros": "25 grams Carbohydrates",
+      "TotalCalories": "95 calories",
+      "id": 1
+    },
+    {
+      "name": "Chicken",
+      "PrimaryMacro": "Protein",
+      "TotalMacros": "40 grams Protein per 1 cup",
+      "TotalCalories": "340 calories",
+      "id": 2
+    },
+    {
+      "name": "Brown Rice",
+      "PrimaryMacro": "Carbohydrates",
+      "TotalMacros": "45 grams Carbohydrates",
+      "TotalCalories": "250 calories",
+      "id": 3
+    },
+    {
+      "name": "Shrimp",
+      "PrimaryMacro": "Protein",
+      "TotalMacros": "20 grams Protein",
+      "TotalCalories": "90 calories",
+      "id": 4
+    },
+    {
+      "name": "Oatmeal",
+      "PrimaryMacro": "Carbohydrate",
+      "TotalMacros": "8 grams protein per 1 oz",
+      "TotalCalories": "55 calories per 1 oz",
+      "id": 5
+    },
+    {
+      "name": "Banana",
+      "PrimaryMacro": "Carbohydrate",
+      "TotalMacros": "50 grams",
+      "TotalCalories": "300 calories",
+      "id": 6
+    }
+  ]
+}

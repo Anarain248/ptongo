@@ -13,6 +13,7 @@ const ExerciseList = ({exercises, header, deleteHandle}) => {
                     <h2>{exercise.name}</h2>
                     <p>Muscles Worked: {exercise.PrimaryMuscleWorked}</p>
                     <p>Type: {exercise.type}</p>
+                    <p>Reps: {exercise.reps}</p>
                     </Link>
                     <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}>Delete Exercise</Button>
                     </div>

@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Footer from './footer'
 import New from './components/New'
 import Exerciseinfo from './components/Exerciseinfo'
+import NewFood from './components/NewFood';
 
 
 
@@ -23,8 +24,11 @@ function App() {
           <Route  path="/new">
             <New />
           </Route>
-          <Route  path="/exercise/:id">
+          {/* <Route  path="/exercise/:id">
             <Exerciseinfo />
+          </Route> */}
+          <Route  path="/newFood">
+            <NewFood />
           </Route>
         </Switch>
 

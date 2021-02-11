@@ -31,12 +31,23 @@
       max-width: 600px;
   }
   .navigation a {
-      margin-left: 100px;
-      padding: 20px;
+      margin-left: 120px;
+      padding: 10px;
       height: 50px;
-
+      text-decoration: none;
+      margin-bottom: -100px;
   }
+
 .pic {
+    position: relative;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+    margin-left: 700px;
+    margin-top: -3000px;
+    margin-bottom: 220px;
+}
+.foodpic {
     position: relative;
     width: 475px;
     height: 350px;
@@ -98,3 +109,22 @@
   .exercise-preview a{
       text-decoration: none;
   }
+
+  .Homepage  {
+      text-align: center;
+      padding: 10px;
+  }
+.new {
+
+}
+
+.fitnesspic {
+    position: relative;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+    margin-left: 700px;
+    margin-top: 400px;
+}
+
+

@@ -4,7 +4,8 @@ import {useState, useEffect} from 'react';
 import ExerciseList from './ExerciseList';
 import picture from '../fitness.jpg';
 import FoodList from './FoodList';
-
+import foodpic from '../food.jpg'
+import fit2 from '../fit2.jpg';
 
 const Home = () => {
     const [err, setErr] = useState('');
@@ -29,6 +30,7 @@ const Home = () => {
             })
             .then((data) => {
                 setExercises(data)
+                console.log(data)
                 setErr(null)
             })
             .catch(err => {
@@ -52,12 +54,12 @@ const Home = () => {
     return (
         <div className="Homepage">
             {err && <div>{err}</div>}
-            <img src={logo}/>
+            <img src={logo}/> <h1 className="mission">Our mission is to make working out and dieting simpler for you!</h1>
 
-            <h3>Your Exercises!</h3>
+         <h2>Your Exercises:</h2>
          {exercises && <ExerciseList exercises={exercises} deleteHandle={deleteHandle}/>} <img className="pic"src={picture}/>
-         <h3>Your Foods!</h3>
-         {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>}
+         <h3>Your Foods:</h3>
+         {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>} <img className="foodpic" src={foodpic}/>
         </div>
 
     );

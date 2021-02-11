@@ -22,9 +22,18 @@
       "id": 3
     },
     {
-      "name": "Lunges",
-      "type": "Quads, Hamstrings, Glutes",
+      "name": "Stiff Leg Deadlifts",
+      "type": "",
+      "PrimaryMuscleWorked": "Hamstrings",
+      "reps": "",
       "id": 4
+    },
+    {
+      "name": "Bench Press",
+      "type": "compound",
+      "PrimaryMuscleWorked": "Chest",
+      "reps": "12-15 reps",
+      "id": 5
     }
   ]
 }

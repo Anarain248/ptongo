@@ -1,21 +1,41 @@
 import logo from '../arjun-logo.png';
 import {useState} from 'react';
 import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormHelperText from '@material-ui/core/FormHelperText';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
 import { useHistory } from 'react-router-dom';
+import fit1 from '../fit1.jpg'
 
 
 
 const New = () => {
-    const [name, setName] = useState('Barbell Squats');
+    const [name, setName] = useState('Stiff Leg Deadlifts');
     const [type, setType] = useState('compound');
-    const [muscle, setMuscle] = useState('biceps');
+    const [muscle, setMuscle] = useState('Chest');
     const [rep, setRep] = useState('3-5 reps');
     const history = useHistory();
 
+    const useStyles = makeStyles((theme) => ({
+        formControl: {
+          margin: theme.spacing(1),
+          minWidth: 120,
+        },
+        selectEmpty: {
+          marginTop: theme.spacing(2),
+        },
+      }));
+    const classes = useStyles();
+
+
     const submitHandle = (e) => {
         e.preventDefault();
-        const exercise = {name, type, muscle, rep};
-
+        console.log('IN SUBMIT HANDLER')
+        const exercise = {name, type, PrimaryMuscleWorked: muscle, reps: rep};
+        console.log(exercise)
         fetch('http://localhost:5000/exercises', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
@@ -26,10 +46,10 @@ const New = () => {
     }
 
     return (
-        <div className="new">
+        <div >
              <img src={logo}/>
             <h2>Add Exercise</h2>
-            <form onSubmit={submitHandle}>
+            <form className="new" >
                 <label>Exercise: </label>
                 <select
                 value={name}
@@ -53,8 +73,9 @@ const New = () => {
                     <option value="compound">Compound</option>
                     <option value="isolation">Isolation</option>
                 </select>
+                <label>Muscle Group:</label>
                 <select
-                value={type}
+                value={muscle}
                 onChange={(e) => setMuscle(e.target.value)}
                 >
                     <option value="Chest">Chest</option>
@@ -73,8 +94,9 @@ const New = () => {
                     <option value="Quads, Hamstrings, Glutes">Quads, Hamstrings, Glutes</option>
                     <option value="Hamstrings, Glutes">Hamstrings, Glutes</option>
                 </select>
+                <label>Reps:</label>
                 <select
-                value={type}
+                value={rep}
                 onChange={(e) => setRep(e.target.value)}
                 >
                     <option value="3-5 reps">3-5 reps</option>
@@ -82,9 +104,10 @@ const New = () => {
                     <option value="12-15 reps">12-15 reps</option>
                     <option value="15-20 reps">15-20 reps</option>
                 </select>
-                <Button  variant="contained" color="secondary" href="#contained-buttons">Add Exercise</Button>
+                <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={submitHandle}>Add Exercise</Button>
 
             </form>
+            <img className="fitnesspic" src={fit1}/>
         </div>
      );
 }
