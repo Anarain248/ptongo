@@ -1,6 +1,7 @@
 import logo from '../arjun-logo.png';
 import {useState} from 'react';
 import { useHistory } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 
 
@@ -71,10 +72,11 @@ const New = () => {
                      <option value="Salmon Calories: 177 calories per 3 oz">Salmon Calories: 177 calories per 3 oz</option>
                      <option value="Oatmeal Cooked Calories: 158 calories per 1 cup"> Oatmeal Cooked Calories: 158 calories per 1 cups</option>
                      <option value="Sweet Potatoes Calories: 114 calories per 1 cup">Sweet Potatoes Calories: 114 calories per 1 cup</option>
-                     <option value="Banana Calories: 114 calories per 1 cup">Banana Calories: 105 calories</option>
+                     <option value="Baked Potatoes Calories: 161 calories per 1 medium potato">Baked Potatoes Calories: 161 calories per 1 medium potato</option>
 
                 </select>
-                <button>Add Exercise</button>
+                <Button variant="contained" color="secondary" href="#contained-buttons">Add Exercise</Button>
+
 
             </form>
         </div>

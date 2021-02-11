@@ -1,5 +1,6 @@
 import logo from '../arjun-logo.png';
 import {useState} from 'react';
+import Button from '@material-ui/core/Button';
 import { useHistory } from 'react-router-dom';
 
 
@@ -81,7 +82,7 @@ const New = () => {
                     <option value="12-15 reps">12-15 reps</option>
                     <option value="15-20 reps">15-20 reps</option>
                 </select>
-                <button>Add Exercise</button>
+                <Button  variant="contained" color="secondary" href="#contained-buttons">Add Exercise</Button>
 
             </form>
         </div>

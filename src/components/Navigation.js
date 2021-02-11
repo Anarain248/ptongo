@@ -13,6 +13,9 @@ const Navigation = () => {
                 <Link to="/new">
                 <Button className="button2" variant="contained"  color="secondary" >New Exercise</Button>
                 </Link>
+                <Link to="/newFood">
+                <Button className="button3" variant="contained"  color="secondary" >New Food</Button>
+                </Link>
                 <Search />
 
             </div>
