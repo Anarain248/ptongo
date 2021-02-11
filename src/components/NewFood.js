@@ -11,7 +11,7 @@ const New = () => {
     const [calories, setCalories] = useState('3-5 reps');
     const history = useHistory();
 
-    const submitHandle = (e) => {
+    const submitHandleFood = (e) => {
         e.preventDefault();
         const food = {name, macro, total, calories};
 
@@ -28,7 +28,7 @@ const New = () => {
         <div className="new">
              <img src={logo}/>
             <h2>Add Food</h2>
-            <form onSubmit={submitHandle}>
+            <form onSubmit={submitHandleFood}>
                 <label>Food: </label>
                 <select
                 value={name}
@@ -36,41 +36,31 @@ const New = () => {
                 >
                     <option value="Banana">Banana</option>
                     <option value="Turkey">Turkey</option>
-                    <option value="">Bench Press</option>
-                    <option value="Barbell/Dumbbell Rows">Barbell/Dumbbell Rows</option>
-                    <option value="Lat Pulldowns">Lat Pulldowns</option>
-                    <option value="Dumbbell Flys">Dumbbell Flys</option>
-                    <option value="Bicep Curls">Bicep Curls</option>
-                    <option value="Tricep Kickbacks">Tricep Kickbacks</option>
+                    <option value="Salmon">Salmon</option>
+                    <option value="Oatmeal">Oatmeal</option>
+                    <option value="Sweet Potatoes">Sweet Potatoes</option>
+                    <option value="Baked Potatoes">Baked Potatoes</option>
 
                 </select>
-                <label>Type:</label>
+                <label>MacroType:</label>
                 <select
-                value={type}
-                onChange={(e) => setType(e.target.value)}
+                value={macro}
+                onChange={(e) => setMacro(e.target.value)}
                 >
-                    <option value="compound">Compound</option>
-                    <option value="isolation">Isolation</option>
+                    <option value="Protein">Protein</option>
+                    <option value="Carbohydrate">Carbohydrate</option>
+                    <option value="Fats">Fats</option>
                 </select>
                 <select
-                value={type}
-                onChange={(e) => setMuscle(e.target.value)}
+                value={total}
+                onChange={(e) => setTotal(e.target.value)}
                 >
-                    <option value="Chest">Chest</option>
-                    <option value="Back">Back</option>
-                    <option value="Quads">Quads</option>
-                    <option value="Hamstrings">Hamstrings</option>
-                    <option value="Triceps">Triceps</option>
-                    <option value="Shoulders">Shoulders</option>
-                    <option value="Abs">Abs</option>
-                    <option value="Biceps">Biceps</option>
-                    <option value="Triceps">Triceps</option>
-                    <option value="Calves">Calves</option>
-                    <option value="Chest, Shoulders, Triceps">Chest, Shoulders, Triceps</option>
-                    <option value="Shoulders, Triceps">Shoulders, Triceps</option>
-                    <option value="Back, Biceps">Back, Biceps</option>
-                    <option value="Quads, Hamstrings, Glutes">Quads, Hamstrings, Glutes</option>
-                    <option value="Hamstrings, Glutes">Hamstrings, Glutes</option>
+                    <option value="Banana Macros: 30 grams carbs">Banana Macros: 30 grams carbs</option>
+                    <option value="Turkey Macros: 8 grams protein per 1 oz">"Turkey Macros: 8 grams protein per 1 oz"</option>
+                    <option value="Salmon Macros: 17 grams protein per 3 oz">"Salmon Macros: 17 grams protein per 3 oz"</option>
+                    <option value="Oatmeal Cooked Macros: 27 grams protein per 1 cup">"Oatmeal Cooked Macros: 27 grams protein per 1 cup"</option>
+                    <option value="Turkey Macros: 8 grams protein per 1 oz">"Turkey Macros: 8 grams protein per 1 oz"</option>
+                    <option value="Turkey Macros: 8 grams protein per 1 oz">"Turkey Macros: 8 grams protein per 1 oz"</option>
                 </select>
                 <select
                 value={type}
