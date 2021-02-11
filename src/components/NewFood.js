@@ -59,17 +59,20 @@ const New = () => {
                     <option value="Turkey Macros: 8 grams protein per 1 oz">"Turkey Macros: 8 grams protein per 1 oz"</option>
                     <option value="Salmon Macros: 17 grams protein per 3 oz">"Salmon Macros: 17 grams protein per 3 oz"</option>
                     <option value="Oatmeal Cooked Macros: 27 grams protein per 1 cup">"Oatmeal Cooked Macros: 27 grams protein per 1 cup"</option>
-                    <option value="Turkey Macros: 8 grams protein per 1 oz">"Turkey Macros: 8 grams protein per 1 oz"</option>
-                    <option value="Turkey Macros: 8 grams protein per 1 oz">"Turkey Macros: 8 grams protein per 1 oz"</option>
+                    <option value="Sweet Potatoes Macros: 27 grams protein per 1 cup">"Sweet Potatoes Macros: 27 grams protein per 1 cup"</option>
+                    <option value="Baked Potatoes Macros: 37 grams protein per 1 medium potato">"Turkey Macros: 37 grams protein per 1 medium potato"</option>
                 </select>
                 <select
-                value={type}
-                onChange={(e) => setRep(e.target.value)}
+                value={calories}
+                onChange={(e) => setCalories(e.target.value)}
                 >
-                    <option value="3-5 reps">3-5 reps</option>
-                    <option value="8-12 reps">8-12 reps</option>
-                    <option value="12-15 reps">12-15 reps</option>
-                    <option value="15-20 reps">15-20 reps</option>
+                     <option value="Banana Calories: 105 calories per banana">Banana Calories: 105 calories per banana</option>
+                     <option value="Turkey Calories: 55 calories per 1 oz">Turkey Calories: 55 calories per 1 oz</option>
+                     <option value="Salmon Calories: 177 calories per 3 oz">Salmon Calories: 177 calories per 3 oz</option>
+                     <option value="Oatmeal Cooked Calories: 158 calories per 1 cup"> Oatmeal Cooked Calories: 158 calories per 1 cups</option>
+                     <option value="Sweet Potatoes Calories: 114 calories per 1 cup">Sweet Potatoes Calories: 114 calories per 1 cup</option>
+                     <option value="Banana Calories: 114 calories per 1 cup">Banana Calories: 105 calories</option>
+
                 </select>
                 <button>Add Exercise</button>
 
