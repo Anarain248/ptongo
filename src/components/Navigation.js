@@ -11,7 +11,7 @@ const Navigation = () => {
                 <Button className="button1" variant="contained" color="secondary" >Home</Button>
                 </Link>
                 <Link to="/new">
-                <Button className="button2" variant="contained"  color="secondary" >New Workout</Button>
+                <Button className="button2" variant="contained"  color="secondary" >New Exercise</Button>
                 </Link>
                 <Search />
 

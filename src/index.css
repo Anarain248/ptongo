@@ -52,6 +52,9 @@
   .exercise-preview:hover {
       color: darkblue;
   }
+  .food-preview:hover {
+      color: darkblue;
+  }
 .search {
     padding: 12px;
     margin-left: 400px;
@@ -68,6 +71,12 @@
       font-size: 20px;
       color: darkblue;
   }
+
+  .food-preview h2 {
+    font-size: 20px;
+    color: darkblue;
+  }
+
   .exercise-preview {
       font-weight: bold;
       margin: 20px 0;
@@ -75,7 +84,17 @@
       padding: 20px;
       text-align: center;
   }
+  .food-preview {
+    font-weight: bold;
+    margin: 20px 0;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
 
+  .food-preview a {
+      text-decoration: none;
+  }
   .exercise-preview a{
       text-decoration: none;
   }

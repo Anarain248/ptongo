@@ -6,19 +6,19 @@ import { useHistory } from 'react-router-dom';
 
 const New = () => {
     const [name, setName] = useState('Barbell Squats');
-    const [type, setType] = useState('compound');
-    const [muscle, setMuscle] = useState('biceps');
-    const [rep, setRep] = useState('3-5 reps');
+    const [macro, setMacro] = useState('compound');
+    const [total, setTotal] = useState('biceps');
+    const [calories, setCalories] = useState('3-5 reps');
     const history = useHistory();
 
     const submitHandle = (e) => {
         e.preventDefault();
-        const exercise = {name, type, muscle, rep};
+        const food = {name, macro, total, calories};
 
-        fetch('http://localhost:5000/exercises', {
+        fetch('http://localhost:8000/foods', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
-            body: JSON.stringify(exercise)
+            body: JSON.stringify(food)
         }).then(() => {
             history.push('/')
         })
@@ -27,16 +27,16 @@ const New = () => {
     return (
         <div className="new">
              <img src={logo}/>
-            <h2>Add Exercise</h2>
+            <h2>Add Food</h2>
             <form onSubmit={submitHandle}>
-                <label>Exercise: </label>
+                <label>Food: </label>
                 <select
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 >
-                    <option value="Stiff Leg Deadlifts">Stiff Leg Deadlifts</option>
-                    <option value="Back Squats">Back Squats</option>
-                    <option value="Bench Press">Bench Press</option>
+                    <option value="Banana">Banana</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="">Bench Press</option>
                     <option value="Barbell/Dumbbell Rows">Barbell/Dumbbell Rows</option>
                     <option value="Lat Pulldowns">Lat Pulldowns</option>
                     <option value="Dumbbell Flys">Dumbbell Flys</option>
