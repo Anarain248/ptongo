@@ -26,10 +26,10 @@ const NewFood = () => {
     }
 
     return (
-        <div className="new-food">
+        <div className="food-form">
              <img src={logo}/>
             <h2>Add Food</h2>
-            <form >
+            <form className="new-food">
                 <label>Food: </label>
                 <select
                 value={name}

@@ -19,16 +19,6 @@ const New = () => {
     const [rep, setRep] = useState('3-5 reps');
     const history = useHistory();
 
-    const useStyles = makeStyles((theme) => ({
-        formControl: {
-          margin: theme.spacing(1),
-          minWidth: 120,
-        },
-        selectEmpty: {
-          marginTop: theme.spacing(2),
-        },
-      }));
-    const classes = useStyles();
 
 
     const submitHandle = (e) => {
@@ -46,7 +36,7 @@ const New = () => {
     }
 
     return (
-        <div >
+        <div className="exercise-form">
              <img src={logo}/>
             <h2>Add Exercise</h2>
             <form className="new" >

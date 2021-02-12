@@ -33,8 +33,8 @@
       max-width: 600px;
   }
   .navigation a {
-      margin-left: 120px;
-      padding: 10px;
+      margin-left: 150px;
+      padding: 35px;
       height: 50px;
       text-decoration: none;
       margin-bottom: -100px;
@@ -120,16 +120,25 @@
     position: relative;
   }
 
+  .exercise-form {
+    margin-top: 60px;
+      position: relative
+  }
+  .food-form {
+    margin-top: 60px;
+    position: relative;
+  }
 .new {
     display: flex;
     flex-direction: column;
     max-width: 400px;
+
 }
 
 .new-food {
     display: flex;
     flex-direction: column;
-    max-width: 200px;
+    max-width: 400px;
 }
 
 .fitnesspic {

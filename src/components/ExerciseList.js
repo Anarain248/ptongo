@@ -50,7 +50,7 @@ const [searched, setSearched] = useState('');
                 ) : ('')
              }
               {filteredexercises.length ?  <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSubmit}>Clear Search</Button>: ''}
-             <h2>Your Exercises:</h2>
+             <h3>Your Exercises:</h3>
             {exercises.map((exercise) => (
                 <div className="exercise-preview" key={exercise.id}>
                     <Link to={`/exercises/${exercise.id}`}>
