@@ -26,7 +26,7 @@ const NewFood = () => {
     }
 
     return (
-        <div className="new">
+        <div className="new-food">
              <img src={logo}/>
             <h2>Add Food</h2>
             <form >
@@ -52,6 +52,7 @@ const NewFood = () => {
                     <option value="Carbohydrate">Carbohydrate</option>
                     <option value="Fats">Fats</option>
                 </select>
+                <label>Total Macro: </label>
                 <select
                 value={total}
                 onChange={(e) => setTotal(e.target.value)}
@@ -63,6 +64,7 @@ const NewFood = () => {
                     <option value="27 grams protein per 1 cup">"Sweet Potatoes Macros: 27 grams protein per 1 cup"</option>
                     <option value="37 grams protein per 1 medium potato">"Turkey Macros: 37 grams protein per 1 medium potato"</option>
                 </select>
+                <label>Total Calories: </label>
                 <select
                 value={calories}
                 onChange={(e) => setCalories(e.target.value)}

@@ -1,9 +1,9 @@
 
 .root {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
-    height: 5vh;
+    height: 7vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -12,15 +12,17 @@
     font-weight: bold;
     font-size: 1.8rem;
     margin-top: 5rem;
+    background-color: black;
+
 }
 .text {
-    color: black;
+    color: white;
     font-size: 1rem;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     margin: 0 30px 0 15px;
 }
 .icons {
-    color: black;
+    color: white;
     margin: 7px 10px 0 5px;
 }

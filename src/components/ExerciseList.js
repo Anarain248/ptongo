@@ -7,9 +7,13 @@ import {useState} from 'react';
 const ExerciseList = ({exercises, header, deleteHandle}) => {
 const [search, setSearch] = useState('');
 const [filteredexercises, setFilteredexercises] = useState([])
+const [searched, setSearched] = useState('');
 
-
+    const handleSubmit = () => {
+        setFilteredexercises([]);
+     }
     const handleSearch = () => {
+        setSearched(search)
         const results = exercises.filter((exercise) => {
 
             if (exercise.name.toLowerCase() === search.toLowerCase()) {
@@ -24,13 +28,15 @@ const [filteredexercises, setFilteredexercises] = useState([])
     return (
         <div className="exercises-list">
 
-            <h3>{header}</h3>
+
             <div>
-                <TextField id="standard-basic" label="Standard" className="search" type="text" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)} />
+                <TextField id="standard-basic" label="Search" className="search" type="text" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)} />
                 <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSearch}><SearchIcon /></Button>
             </div>
-             {/* {(filteredexercises) ? ( { */}
-                 {filteredexercises.map((exercise) => (
+            {filteredexercises.length ? <h3>Search Results:</h3>: ''}
+            {filteredexercises.length ? <h5>{`You searched for ${searched}`}</h5>: ''}
+            {(filteredexercises.length) ? (
+                 filteredexercises.map((exercise) => (
                     <div className="exercise-preview" key={exercise.id}>
                         <Link to={`/exercises/${exercise.id}`}>
                         <h2>{exercise.name}</h2>
@@ -38,15 +44,13 @@ const [filteredexercises, setFilteredexercises] = useState([])
                         <p>Type: {exercise.type}</p>
                         <p>Reps: {exercise.reps}</p>
                         </Link>
-                        <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}>Delete Exercise</Button>
-
-                        </div>
-                        )
-
-                        )}
-
-
-            {/* )} : ''} */}
+                    </div>
+                    )
+                )
+                ) : ('')
+             }
+              {filteredexercises.length ?  <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSubmit}>Clear Search</Button>: ''}
+             <h2>Your Exercises:</h2>
             {exercises.map((exercise) => (
                 <div className="exercise-preview" key={exercise.id}>
                     <Link to={`/exercises/${exercise.id}`}>

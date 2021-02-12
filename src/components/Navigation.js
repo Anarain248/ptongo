@@ -16,7 +16,7 @@ const Navigation = () => {
                 <Link to="/newFood">
                 <Button className="button3" variant="contained"  color="secondary" >New Food</Button>
                 </Link>
-                <Search />
+               
 
             </div>
         </nav>

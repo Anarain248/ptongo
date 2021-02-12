@@ -7,14 +7,16 @@
     font-weight: bold;
 }
 
-
 .navigation {
     display:flex;
     justify-content: space-evenly;
-    height: 60px;
+    height: 10vh;
     align-items: center;
     width: 100%;
    background-color: black;
+   position: fixed;
+   top: 0;
+   z-index: 125;
   }
 
   .navigation h1 {
@@ -113,9 +115,21 @@
   .Homepage  {
       text-align: center;
       padding: 10px;
+      height: 100%;
+    margin-top: 60px;
+    position: relative;
   }
-.new {
 
+.new {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.new-food {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
 }
 
 .fitnesspic {
@@ -126,5 +140,3 @@
     margin-left: 700px;
     margin-top: 400px;
 }
-
-

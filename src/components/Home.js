@@ -56,9 +56,9 @@ const Home = () => {
             {err && <div>{err}</div>}
             <img src={logo}/> <h1 className="mission">Our mission is to make working out and dieting simpler for you!</h1>
 
-         <h2>Your Exercises:</h2>
+
          {exercises && <ExerciseList exercises={exercises} deleteHandle={deleteHandle}/>} <img className="pic"src={picture}/>
-         <h3>Your Foods:</h3>
+        
          {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>} <img className="foodpic" src={foodpic}/>
         </div>
 
