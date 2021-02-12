@@ -38,6 +38,7 @@ const New = () => {
     return (
         <div className="exercise-form">
              <img src={logo}/>
+             <img className="fitnesspic" src={fit1}/>
             <h2>Add Exercise</h2>
             <form className="new" >
                 <label>Exercise: </label>
@@ -97,7 +98,7 @@ const New = () => {
                 <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={submitHandle}>Add Exercise</Button>
 
             </form>
-            <img className="fitnesspic" src={fit1}/>
+         
         </div>
      );
 }

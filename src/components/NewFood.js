@@ -2,7 +2,8 @@ import logo from '../arjun-logo.png';
 import {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-
+import food2 from '../food2.jpg';
+import food3 from '../food3.jpg';
 
 
 const NewFood = () => {
@@ -28,6 +29,8 @@ const NewFood = () => {
     return (
         <div className="food-form">
              <img src={logo}/>
+             <img className="food2" src={food2}/>
+            
             <h2>Add Food</h2>
             <form className="new-food">
                 <label>Food: </label>

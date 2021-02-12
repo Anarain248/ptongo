@@ -41,13 +41,12 @@
   }
 
 .pic {
-    position: relative;
+    position: absolute;
     width: 475px;
     height: 350px;
     border-radius: 20%;
-    margin-left: 700px;
-    margin-top: -3000px;
-    margin-bottom: 220px;
+    margin-left: 600px;;
+    margin-top: 1200px;
 }
 .foodpic {
     position: relative;
@@ -122,7 +121,7 @@
 
   .exercise-form {
     margin-top: 60px;
-      position: relative
+      position: absolute;
   }
   .food-form {
     margin-top: 60px;
@@ -142,10 +141,62 @@
 }
 
 .fitnesspic {
-    position: relative;
+    position: absolute;
     width: 475px;
     height: 350px;
     border-radius: 20%;
-    margin-left: 700px;
-    margin-top: 400px;
+
+
+}
+
+.food2 {
+    position: absolute;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+}
+
+.food3 {
+    position: absolute;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+    margin-left: 400px;
+    margin-top: 160px;
+}
+
+.food5 {
+    position: absolute;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+    margin-left: 400px;
+    margin-top: 650px;
+}
+
+.foodpic {
+    position: absolute;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+    margin-left: 400px;
+    margin-top: 1100px;
+}
+
+.fit3 {
+    position: absolute;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+    margin-left: 600px;;
+    margin-top: 100px;
+}
+
+.fit4 {
+    position: absolute;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+    margin-left: 600px;;
+    margin-top: 600px;
 }
