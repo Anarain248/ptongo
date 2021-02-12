@@ -29,7 +29,7 @@ const [filteredexercises, setFilteredexercises] = useState([])
                 <TextField id="standard-basic" label="Standard" className="search" type="text" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)} />
                 <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSearch}><SearchIcon /></Button>
             </div>
-            { (filteredexercises.length > 0) ? ( {
+             {/* {(filteredexercises) ? ( { */}
                  {filteredexercises.map((exercise) => (
                     <div className="exercise-preview" key={exercise.id}>
                         <Link to={`/exercises/${exercise.id}`}>
@@ -46,7 +46,7 @@ const [filteredexercises, setFilteredexercises] = useState([])
                         )}
 
 
-            }) : ''}
+            {/* )} : ''} */}
             {exercises.map((exercise) => (
                 <div className="exercise-preview" key={exercise.id}>
                     <Link to={`/exercises/${exercise.id}`}>
