@@ -1,7 +1,7 @@
 import ExerciseList from './ExerciseList';
 
 const Search = ({exercises}) => {
-//    const filterExercise = <ExerciseList exercises= {exercises.filter((exercise) =>
+//   <ExerciseList exercises= {exercises.filter((exercise) =>
 //         exercise.type === 'compound'
 //     )} header="Compound Exercises"/>
     return (

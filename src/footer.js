@@ -12,9 +12,9 @@ const Footer = () => {
             <a href='https://www.linkedin.com/in/arjun-narain-5a5519101/'>
                 <FaLinkedin className=' icons ' />
             </a>
-            {/* <a href={angel} >
+            <a href='https://angel.co/u/arjun-narain-2' >
                 <FaAngellist className=' icons ' />
-            </a> */}
+            </a>
             <a href={`mailto: Arjun.narain700@gmail.com`}>
                 <FaEnvelope
                     className='icons'
