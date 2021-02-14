@@ -133,6 +133,11 @@
     position: absolute;
     margin-left: 10px;
   }
+  .splash-form {
+    margin-top: 90px;
+    position: relative;
+    margin-left: 10px;
+  }
 .new {
     display: flex;
     flex-direction: column;
@@ -140,7 +145,27 @@
 
 }
 
+.new-splash {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-left: 10px;
 
+}
+.signupbutton {
+    margin-top: 10px;
+    margin:auto;
+}
+.loginbutton {
+    margin-top: 10px;
+    padding: 10px;
+    margin:auto;
+}
+.demobutton {
+    margin-top: 10px;
+    padding: 10px;
+    margin:auto;
+}
 .new-food {
     display: flex;
     flex-direction: column;
@@ -153,6 +178,15 @@
     height: 350px;
     border-radius: 20%;
     border: 4px solid black;
+}
+.food {
+    position: absolute;
+    width: 475px;
+    height: 350px;
+    border-radius: 20%;
+    border: 4px solid black;
+    margin-top: -200px;
+    margin-left: 550px;
 }
 
 .food2 {

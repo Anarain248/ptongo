@@ -10,7 +10,7 @@ const Navigation = () => {
     return (
         <nav className="navigation">
             <div className="setLinks">
-               <Link to="/" className="button1">
+               <Link to="/home" className="button1">
                 <Button  variant="contained" color="secondary" >Home</Button>
                 </Link>
                 <Link to="/new" className="button2">

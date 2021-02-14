@@ -63,14 +63,14 @@ const Home = () => {
             <img className="fit3" src={fit3}/>
             <img className="fit4" src={fit4}/>
             <img className="pic"src={picture}/>
-            <img src={logo}/> <h1 className="mission">Our mission is to make working out and dieting simpler for you!</h1>
+            <img src={logo}/> 
 
 
          {exercises && <ExerciseList exercises={exercises} deleteHandle={deleteHandle}/>}
          <img className="food3" src={food3}/>
          <img className="food3" src={food4}/>
          <img className="food5" src={food5}/>
-        
+
          {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>}
 
         </div>

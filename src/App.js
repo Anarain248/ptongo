@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Footer from './footer'
 import New from './components/New'
 import NewFood from './components/NewFood';
+import SplashPage from './components/SplashPage';
 
 
 
@@ -17,7 +18,10 @@ function App() {
       <Navigation />
       <div className="webContent">
         <Switch>
-          <Route exact path="/">
+        <Route exact path="/">
+            <SplashPage />
+          </Route>
+          <Route path="/home">
             <Home />
           </Route>
           <Route  path="/new">
