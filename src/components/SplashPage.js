@@ -53,7 +53,7 @@ const SplashPage = () => {
         <Button variant="contained" color="secondary"type="submit" onClick={SplashHandle}>Demo</Button>
         </div>
         <div className= "loginbutton">
-        <Button variant="contained" color="secondary"type="submit" onClick={SplashHandle}>Login</Button>
+        <Button variant="contained" color="secondary"type="submit">Login</Button>
         </div>
         </form>
 
