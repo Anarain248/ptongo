@@ -126,10 +126,12 @@
   .exercise-form {
     margin-top: 60px;
       position: absolute;
+      margin-left: 10px;
   }
   .food-form {
     margin-top: 60px;
-    position: relative;
+    position: absolute;
+    margin-left: 10px;
   }
 .new {
     display: flex;
@@ -151,8 +153,6 @@
     height: 350px;
     border-radius: 20%;
     border: 4px solid black;
-
-
 }
 
 .food2 {

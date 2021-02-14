@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import food2 from '../food2.jpg';
 import food3 from '../food3.jpg';
-import foodpic from '../food.jpg'
 
 
 const NewFood = () => {
