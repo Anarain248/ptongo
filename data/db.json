@@ -34,34 +34,7 @@
       "PrimaryMuscleWorked": "Chest",
       "reps": "12-15 reps",
       "id": 5
-    },
-    {
-      "name": "Bench Press",
-      "type": "compound",
-      "PrimaryMuscleWorked": "Chest",
-      "reps": "12-15 reps",
-      "id": 6
-    },
-    {
-      "name": "Bench Press",
-      "type": "compound",
-      "PrimaryMuscleWorked": "Chest",
-      "reps": "3-5 reps",
-      "id": 7
-    },
-    {
-      "name": "Stiff Leg Deadlifts",
-      "type": "compound",
-      "PrimaryMuscleWorked": "Hamstrings",
-      "reps": "3-5 reps",
-      "id": 8
-    },
-    {
-      "name": "Stiff Leg Deadlifts",
-      "type": "compound",
-      "PrimaryMuscleWorked": "Hamstrings",
-      "reps": "3-5 reps",
-      "id": 9
     }
+
   ]
 }

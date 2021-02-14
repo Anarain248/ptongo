@@ -70,7 +70,7 @@ const Home = () => {
          <img className="food3" src={food3}/>
          <img className="food3" src={food4}/>
          <img className="food5" src={food5}/>
-         <img className="foodpic" src={foodpic}/>
+        
          {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>}
 
         </div>
