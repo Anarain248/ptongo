@@ -7,7 +7,7 @@ import TextField from '@material-ui/core/TextField';
 
 const FoodList = ({foods, header, deleteHandleFood}) => {
     const [search, setSearch] = useState('');
-    const [filteredfoods, setFilteredfoods] = useState([])
+    const [filteredfoods, setFilteredfoods] = useState([]);
     const [searched, setSearched] = useState('');
 
         const handleSubmit = () => {
