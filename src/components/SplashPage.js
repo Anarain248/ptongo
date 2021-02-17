@@ -5,12 +5,18 @@ import food from '../food.jpg';
 
 
 
-const SplashPage = () => {
+const SplashPage = () =>
+
+{
     const history = useHistory();
     const SplashHandle = (e) => {
         e.preventDefault()
         history.push('/home')
     }
+
+
+
+
     return (
         <div className ="splash-form">
             <img src={logo}/>

@@ -34,7 +34,13 @@
       "TotalMacros": "8 grams protein per 1 oz",
       "TotalCalories": "55 calories per 1 oz",
       "id": 5
+    },
+    {
+      "name": "Banana",
+      "PrimaryMacro": "Carbohydrate",
+      "TotalMacros": "50 grams",
+      "TotalCalories": "300 calories",
+      "id": 6
     }
-
   ]
 }
