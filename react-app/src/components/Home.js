@@ -30,7 +30,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/exercises')
+        fetch('/api/exercises')
             .then(res => {
                 return res.json()
             })
@@ -44,7 +44,7 @@ const Home = () => {
     }, [])
 
     useEffect(() => {
-        fetch('http://localhost:8000/foods')
+        fetch('/api/foods')
             .then(res => {
                 return res.json()
             })
@@ -63,7 +63,7 @@ const Home = () => {
             <img className="fit3" src={fit3}/>
             <img className="fit4" src={fit4}/>
             <img className="pic"src={picture}/>
-            <img src={logo}/> 
+            <img src={logo}/>
 
 
          {exercises && <ExerciseList exercises={exercises} deleteHandle={deleteHandle}/>}

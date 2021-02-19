@@ -26,7 +26,7 @@ const New = () => {
         console.log('IN SUBMIT HANDLER')
         const exercise = {name, type, PrimaryMuscleWorked: muscle, reps: rep};
         console.log(exercise)
-        fetch('http://localhost:5000/exercises', {
+        fetch('/api/exercises', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(exercise)
@@ -39,7 +39,7 @@ const New = () => {
         <div className="exercise-form">
              <img src={logo}/>
             <h2>Add Exercise</h2>
-           
+
             <form className="new" >
                 <label>Exercise: </label>
                 <select
