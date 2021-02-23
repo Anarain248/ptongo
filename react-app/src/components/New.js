@@ -32,7 +32,7 @@ const New = () => {
             body: JSON.stringify(exercise)
         })
         console.log(data)
-            history.push('/')
+            history.push('/home')
 
     };
 

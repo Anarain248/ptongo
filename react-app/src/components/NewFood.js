@@ -13,18 +13,18 @@ const NewFood = () => {
     const [calories, setCalories] = useState('300 calories');
     const history = useHistory();
 
-    const submitHandleFood = (e) => {
+    const submitHandleFood = async (e) => {
         e.preventDefault();
         const food = {name, PrimaryMacro: macro, TotalMacros: total, TotalCalories: calories};
 
-        fetch('/api/foods', {
+        const data = await fetch('/api/foods/new', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(food)
-        }).then(() => {
-            history.push('/')
         })
-    }
+            history.push('/home')
+
+    };
 
     return (
         <div className="food-form">
