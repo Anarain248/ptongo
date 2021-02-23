@@ -9,6 +9,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import { useHistory } from 'react-router-dom';
 import fit1 from '../fit1.jpg'
+import ControlPointDuplicateIcon from '@material-ui/icons/ControlPointDuplicate';
 
 
 
@@ -96,7 +97,7 @@ const New = () => {
                     <option value="12-15 reps">12-15 reps</option>
                     <option value="15-20 reps">15-20 reps</option>
                 </select>
-                <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={submitHandle}>Add Exercise</Button>
+                <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={submitHandle}><ControlPointDuplicateIcon />Add Exercise</Button>
 
             </form>
 

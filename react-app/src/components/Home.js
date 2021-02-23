@@ -80,7 +80,7 @@ const Home = () => {
             {err && <div>{err}</div>}
             <img className="fit3" src={fit3}/>
             <img className="fit4" src={fit4}/>
-            <img className="pic" src={picture}/>
+
             <img src={logo}/>
 
 
@@ -88,7 +88,7 @@ const Home = () => {
 
          <img className="food3" src={food3}/>
          <img className="food3" src={food4}/>
-         <img className="food5" src={food5}/>
+        
 
          {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>}
 

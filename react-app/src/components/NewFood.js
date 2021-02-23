@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import food2 from '../food2.jpg';
 import food3 from '../food3.jpg';
+import ControlPointDuplicateIcon from '@material-ui/icons/ControlPointDuplicate';
 
 
 const NewFood = () => {
@@ -80,7 +81,7 @@ const NewFood = () => {
                      <option value="161 calories per 1 medium potato">Baked Potatoes Calories: 161 calories per 1 medium potato</option>
 
                 </select>
-                <Button variant="contained" color="secondary" href="#contained-buttons" onClick={submitHandleFood}>Add Food</Button>
+                <Button variant="contained" color="secondary" href="#contained-buttons" onClick={submitHandleFood}><ControlPointDuplicateIcon />Add Food</Button>
 
 
             </form>

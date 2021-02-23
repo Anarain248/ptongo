@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import {useState} from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import TextField from '@material-ui/core/TextField';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const FoodList = ({foods, header, deleteHandleFood}) => {
     const [search, setSearch] = useState('');
@@ -37,28 +38,28 @@ const FoodList = ({foods, header, deleteHandleFood}) => {
             {(filteredfoods.length) ? (
                  filteredfoods.map((food) => (
                     <div className="exercise-preview" key={food.id}>
-                        <Link to={`/exercises/${food.id}`}>
+                        {/* <Link to={`/exercises/${food.id}`}> */}
                         <h2>{food.name}</h2>
                         <p>Muscles Worked: {food.primarymacro}</p>
                         <p>Type: {food.totalmacros}</p>
                         <p>Reps: {food.totalcalories}</p>
-                        </Link>
+                        {/* </Link> */}
                     </div>
                     )
                 )
                 ) : ('')
              }
               {filteredfoods.length ?  <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSubmit}>Clear Search</Button>: ''}
-              <h3>Your Foods:</h3>
+              <h3>Recommended Foods:</h3>
             {foods.map((food) => (
                 <div className="food-preview" key={food.id}>
-                    <Link to={`/foods/${food.id}`}>
+                    {/* <Link to={`/foods/${food.id}`}> */}
                     <h2>{food.name}</h2>
                     <p>Primary Macronutrient: {food.primarymacro}</p>
                     <p>Total Macronutrients: {food.totalmacros}</p>
                     <p>Total Calories: {food.totalcalories}</p>
-                    </Link>
-                    <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandleFood(food.id)}>Delete Food</Button>
+                    {/* </Link> */}
+                    <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandleFood(food.id)}><DeleteIcon />Delete Food</Button>
                     </div>
                     ))}
         </div>

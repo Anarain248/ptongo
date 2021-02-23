@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import TextField from '@material-ui/core/TextField';
 import {useState} from 'react';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const ExerciseList = ({exercises, header, deleteHandle}) => {
 const [search, setSearch] = useState('');
@@ -50,8 +51,8 @@ console.log(exercises, '!!!!!!!!!!!!!!!!')
                 ) : ('')
              }
               {filteredexercises.length ?  <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSubmit}>Clear Search</Button>: ''}
-             <h3>Your Exercises:</h3>
-             
+             <h3>Recommended Exercises:</h3>
+
             {exercises.map((exercise) => (
                 <div className="exercise-preview" key={exercise.id}>
                     {/* <Link to={`/exercises/${exercise.id}`}> */}
@@ -60,7 +61,7 @@ console.log(exercises, '!!!!!!!!!!!!!!!!')
                     <p>Type: {exercise.exerciseType}</p>
                     <p>Reps: {exercise.reps}</p>
                     {/* </Link> */}
-                    <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}>Delete Exercise</Button>
+                    <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}> <DeleteIcon />Delete Exercise</Button>
 
                     </div>
                     )
