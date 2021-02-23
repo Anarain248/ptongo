@@ -9,11 +9,11 @@ class Food(db.Model):
     totalmacros = db.Column(db.String(100), nullable=False, unique=True)
     totalcalories = db.Column(db.String(100), nullable=False, unique=True)
 
-def to_dict(self):
-    return {
-      "id": self.id,
-      "name": self.name,
-      "primarymacro": self.primarymacro,
-      "totalmacros": self.totalmacros,
-      "totalcalories": self.totalcalories,
-    }
+    def to_dict(self):
+      return {
+        "id": self.id,
+        "name": self.name,
+        "primarymacro": self.primarymacro,
+        "totalmacros": self.totalmacros,
+        "totalcalories": self.totalcalories,
+      }
