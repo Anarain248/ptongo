@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import LogoutButton from './auth/LogoutButton';
+// import LogoutButton from './auth/LogoutButton';
 
 const Navigation = ({setAuthenticated}) => {
     return (
@@ -25,8 +25,8 @@ const Navigation = ({setAuthenticated}) => {
                 <Link to="/newFood" className="button3">
                 <Button  variant="contained"  color="secondary" >New Food</Button>
                 </Link>
-                
-                <LogoutButton setAuthenticated={setAuthenticated} />
+
+                {/* <LogoutButton setAuthenticated={setAuthenticated} /> */}
 
 
             </div>

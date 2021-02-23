@@ -14,9 +14,9 @@ import food5 from '../food5.jpg';
 
 
 const Home = () => {
-    const [err, setErr] = useState('');
-    const [exercises, setExercises] = useState('');
-    const [foods, setFoods] = useState('');
+    const [err, setErr] = useState([]);
+    const [exercises, setExercises] = useState([]);
+    const [foods, setFoods] = useState([]);
 
 
     const deleteHandle = (id) => {
@@ -29,32 +29,50 @@ const Home = () => {
         setFoods(newFoods)
     }
 
-    useEffect(() => {
-        fetch('/api/exercises')
-            .then(res => {
-                return res.json()
-            })
-            .then((data) => {
-                setExercises(data)
-                console.log(data)
-                setErr(null)
-            })
-            .catch(err => {
-            })
-    }, [])
+    // useEffect(() => {
+    //     fetch('/api/exercises')
+    //         .then(res => {
+    //             return res.json()
+    //         })
+    //         .then((data) => {
+    //             setExercises(data)
+    //             console.log(data)
+    //             setErr(null)
+    //         })
+    //         .catch(err => {
+    //         })
+    // }, [])
 
     useEffect(() => {
-        fetch('/api/foods')
-            .then(res => {
-                return res.json()
-            })
-            .then((data) => {
-                setFoods(data)
-                setErr(null)
-            })
-            .catch(err => {
-            })
-    }, [])
+
+        (async () => {
+          const response = await fetch(`/api/exercises`);
+          const {exercises: fetchedExercises} = await response.json();
+          setExercises(fetchedExercises);
+        })();
+      }, []);
+
+      useEffect(() => {
+
+        (async () => {
+          const response = await fetch(`/api/foods`);
+          const {foods: fetchedFoods} = await response.json();
+          setFoods(fetchedFoods);
+        })();
+      }, []);
+
+    // useEffect(() => {
+    //     fetch('/api/foods')
+    //         .then(res => {
+    //             return res.json()
+    //         })
+    //         .then((data) => {
+    //             setFoods(data)
+    //             setErr(null)
+    //         })
+    //         .catch(err => {
+    //         })
+    // }, [])
 
 
     return (
@@ -62,11 +80,12 @@ const Home = () => {
             {err && <div>{err}</div>}
             <img className="fit3" src={fit3}/>
             <img className="fit4" src={fit4}/>
-            <img className="pic"src={picture}/>
+            <img className="pic" src={picture}/>
             <img src={logo}/>
 
 
          {exercises && <ExerciseList exercises={exercises} deleteHandle={deleteHandle}/>}
+
          <img className="food3" src={food3}/>
          <img className="food3" src={food4}/>
          <img className="food5" src={food5}/>

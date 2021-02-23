@@ -17,7 +17,7 @@ const NewFood = () => {
         e.preventDefault();
         const food = {name, PrimaryMacro: macro, TotalMacros: total, TotalCalories: calories};
 
-        fetch('http://localhost:8000/foods', {
+        fetch('/api/foods', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(food)

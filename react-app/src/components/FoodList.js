@@ -39,9 +39,9 @@ const FoodList = ({foods, header, deleteHandleFood}) => {
                     <div className="exercise-preview" key={food.id}>
                         <Link to={`/exercises/${food.id}`}>
                         <h2>{food.name}</h2>
-                        <p>Muscles Worked: {food.PrimaryMacro}</p>
-                        <p>Type: {food.TotalMacros}</p>
-                        <p>Reps: {food.TotalCalories}</p>
+                        <p>Muscles Worked: {food.primarymacro}</p>
+                        <p>Type: {food.totalmacros}</p>
+                        <p>Reps: {food.totalcalories}</p>
                         </Link>
                     </div>
                     )
@@ -54,9 +54,9 @@ const FoodList = ({foods, header, deleteHandleFood}) => {
                 <div className="food-preview" key={food.id}>
                     <Link to={`/foods/${food.id}`}>
                     <h2>{food.name}</h2>
-                    <p>Primary Macronutrient: {food.PrimaryMacro}</p>
-                    <p>Total Macronutrients: {food.TotalMacros}</p>
-                    <p>Total Calories: {food.TotalCalories}</p>
+                    <p>Primary Macronutrient: {food.primarymacro}</p>
+                    <p>Total Macronutrients: {food.totalmacros}</p>
+                    <p>Total Calories: {food.totalcalories}</p>
                     </Link>
                     <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandleFood(food.id)}>Delete Food</Button>
                     </div>

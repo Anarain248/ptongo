@@ -8,7 +8,7 @@ const ExerciseList = ({exercises, header, deleteHandle}) => {
 const [search, setSearch] = useState('');
 const [filteredexercises, setFilteredexercises] = useState([])
 const [searched, setSearched] = useState('');
-
+console.log(exercises, '!!!!!!!!!!!!!!!!')
     const handleSubmit = () => {
         setFilteredexercises([]);
      }
@@ -40,8 +40,8 @@ const [searched, setSearched] = useState('');
                     <div className="exercise-preview" key={exercise.id}>
                         <Link to={`/exercises/${exercise.id}`}>
                         <h2>{exercise.name}</h2>
-                        <p>Muscles Worked: {exercise.PrimaryMuscleWorked}</p>
-                        <p>Type: {exercise.type}</p>
+                        <p>Muscles Worked: {exercise.primarymuscle}</p>
+                        <p>Type: {exercise.exerciseType}</p>
                         <p>Reps: {exercise.reps}</p>
                         </Link>
                     </div>
@@ -51,14 +51,15 @@ const [searched, setSearched] = useState('');
              }
               {filteredexercises.length ?  <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSubmit}>Clear Search</Button>: ''}
              <h3>Your Exercises:</h3>
+             
             {exercises.map((exercise) => (
                 <div className="exercise-preview" key={exercise.id}>
-                    <Link to={`/exercises/${exercise.id}`}>
+                    {/* <Link to={`/exercises/${exercise.id}`}> */}
                     <h2>{exercise.name}</h2>
-                    <p>Muscles Worked: {exercise.PrimaryMuscleWorked}</p>
-                    <p>Type: {exercise.type}</p>
+                    <p>Muscles Worked: {exercise.primarymuscle}</p>
+                    <p>Type: {exercise.exerciseType}</p>
                     <p>Reps: {exercise.reps}</p>
-                    </Link>
+                    {/* </Link> */}
                     <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}>Delete Exercise</Button>
 
                     </div>

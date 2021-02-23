@@ -21,19 +21,20 @@ const New = () => {
 
 
 
-    const submitHandle = (e) => {
+    const submitHandle = async (e) => {
         e.preventDefault();
         console.log('IN SUBMIT HANDLER')
         const exercise = {name, type, PrimaryMuscleWorked: muscle, reps: rep};
         console.log(exercise)
-        fetch('/api/exercises', {
+        const data = await fetch('/api/exercises/new', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(exercise)
-        }).then(() => {
-            history.push('/')
         })
-    }
+        console.log(data)
+            history.push('/')
+
+    };
 
     return (
         <div className="exercise-form">

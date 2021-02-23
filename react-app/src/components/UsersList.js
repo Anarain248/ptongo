@@ -8,7 +8,7 @@ function UsersList() {
         async function fetchData() {
             const response = await fetch("/api/users");
             const responseData = await response.json();
-            setUsers(responaseData.users);
+            setUsers(responseData.users);
         }
         fetchData();
     }, []);
@@ -28,4 +28,4 @@ function UsersList() {
     )
 }
 
-export default UsersList; 
+export default UsersList;
