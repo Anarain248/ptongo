@@ -53,12 +53,12 @@ const FoodList = ({foods, header, deleteHandleFood}) => {
               <h3>Recommended Foods:</h3>
             {foods.map((food) => (
                 <div className="food-preview" key={food.id}>
-                    {/* <Link to={`/foods/${food.id}`}> */}
+                    <Link to={`/foods/${food.id}`}>
                     <h2>{food.name}</h2>
                     <p>Primary Macronutrient: {food.primarymacro}</p>
                     <p>Total Macronutrients: {food.totalmacros}</p>
                     <p>Total Calories: {food.totalcalories}</p>
-                    {/* </Link> */}
+                    </Link>
                     <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandleFood(food.id)}><DeleteIcon />Delete Food</Button>
                     </div>
                     ))}

@@ -29,19 +29,7 @@ const Home = () => {
         setFoods(newFoods)
     }
 
-    // useEffect(() => {
-    //     fetch('/api/exercises')
-    //         .then(res => {
-    //             return res.json()
-    //         })
-    //         .then((data) => {
-    //             setExercises(data)
-    //             console.log(data)
-    //             setErr(null)
-    //         })
-    //         .catch(err => {
-    //         })
-    // }, [])
+   
 
     useEffect(() => {
 
@@ -61,18 +49,7 @@ const Home = () => {
         })();
       }, []);
 
-    // useEffect(() => {
-    //     fetch('/api/foods')
-    //         .then(res => {
-    //             return res.json()
-    //         })
-    //         .then((data) => {
-    //             setFoods(data)
-    //             setErr(null)
-    //         })
-    //         .catch(err => {
-    //         })
-    // }, [])
+
 
 
     return (
@@ -88,7 +65,7 @@ const Home = () => {
 
          <img className="food3" src={food3}/>
          <img className="food3" src={food4}/>
-        
+
 
          {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>}
 

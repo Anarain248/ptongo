@@ -30,7 +30,7 @@ const NewFood = () => {
     return (
         <div className="food-form">
              <img src={logo}/>
-             <img className="foodpic" src={food2}/>
+             {/* <img className="foodpic" src={food2}/> */}
 
             <h2>Add Food</h2>
             <form className="new-food">

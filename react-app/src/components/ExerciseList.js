@@ -55,12 +55,12 @@ console.log(exercises, '!!!!!!!!!!!!!!!!')
 
             {exercises.map((exercise) => (
                 <div className="exercise-preview" key={exercise.id}>
-                    {/* <Link to={`/exercises/${exercise.id}`}> */}
+                    <Link to={`/exercises/${exercise.id}`}>
                     <h2>{exercise.name}</h2>
                     <p>Muscles Worked: {exercise.primarymuscle}</p>
                     <p>Type: {exercise.exerciseType}</p>
                     <p>Reps: {exercise.reps}</p>
-                    {/* </Link> */}
+                    </Link>
                     <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}> <DeleteIcon />Delete Exercise</Button>
 
                     </div>
