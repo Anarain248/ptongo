@@ -24,5 +24,5 @@ def seed_exercise():
 
 def undo_exercises():
 
-    db.session.execute('TRUNCATE exercises;')
+    db.session.execute('TRUNCATE exercises CASCADE;')
     db.session.commit()

@@ -1,8 +1,8 @@
-"""all tables migrated 
+"""empty message
 
-Revision ID: 0b7a66e319c3
-Revises:
-Create Date: 2021-02-19 16:37:59.128606
+Revision ID: ed7e47553d75
+Revises: 
+Create Date: 2021-02-23 15:59:28.394237
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '0b7a66e319c3'
+revision = 'ed7e47553d75'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -24,11 +24,7 @@ def upgrade():
     sa.Column('exercisetype', sa.String(length=100), nullable=False),
     sa.Column('reps', sa.String(length=100), nullable=False),
     sa.Column('primarymuscle', sa.String(length=500), nullable=False),
-    sa.PrimaryKeyConstraint('id'),
-    sa.UniqueConstraint('exercisetype'),
-    sa.UniqueConstraint('name'),
-    sa.UniqueConstraint('primarymuscle'),
-    sa.UniqueConstraint('reps')
+    sa.PrimaryKeyConstraint('id')
     )
     op.create_table('foods',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -37,10 +33,7 @@ def upgrade():
     sa.Column('totalmacros', sa.String(length=100), nullable=False),
     sa.Column('totalcalories', sa.String(length=100), nullable=False),
     sa.PrimaryKeyConstraint('id'),
-    sa.UniqueConstraint('name'),
-    sa.UniqueConstraint('primarymacro'),
-    sa.UniqueConstraint('totalcalories'),
-    sa.UniqueConstraint('totalmacros')
+    sa.UniqueConstraint('name')
     )
     op.create_table('users',
     sa.Column('id', sa.Integer(), nullable=False),

@@ -24,5 +24,5 @@ def seed_food():
 
 def undo_foods():
 
-    db.session.execute('TRUNCATE foods;')
+    db.session.execute('TRUNCATE foods CASCADE;')
     db.session.commit()
