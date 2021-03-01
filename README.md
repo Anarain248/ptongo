@@ -49,17 +49,17 @@ PtonGo is a fitness application that allows users to learn about different exerc
       - #### View
           User will be able to view all exercises and foods along with the recommendations on the home page. 
             
-            - ##### View Exercises 
+            - View Exercises 
                 User will be able to view exercises on the home page. 
             
-             - ##### View Foods 
+             - View Foods 
                 User will be able to view foods on the home page. 
          
        - #### Search
             
-        - ##### Search Exercises 
+        -Search Exercises 
             User will be able to search for different exercises from the search bar above the exercises. 
-        - ##### Search Foods 
+        -  Search Foods 
             User will be able to search for different foods from the search bar above the foods. 
         
           
