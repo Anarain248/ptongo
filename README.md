@@ -1,76 +1,66 @@
+# PTonGo
 
-# Create React App Template
+## Table of Contents
 
-A no-frills template from which to create React applications with
-[Create React App](https://github.com/facebook/create-react-app).
+- [Introduction](#introduction)
+- [Dependencies](#dependencies)
+- [Features](#features)
+	- [User Experience](#userexperience)
+		- [Add Exercises](#add-exercise)
+		- [Add Foods](#add-food)
+		- [Learn about Exercises](#learn-exercise)
+		- [Learn about Foods](#learn-food)
+		- [View](#view)
+			- [View Exercises](#view-exercises)
+			- [View Foods](#view-foods)
+	- [Search](#search)
+	  - [Search Exercises](#search-exercise)
+	  - [Search Foods](#search-food)
 
-```sh
-npx create-react-app my-app --template @appacademy/simple --use-npm
-```
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+PtonGo is a fitness application that allows users to learn about different exercises and foods. The main purpose of the application is to educate users on details about the various popular exercises and foods so that they can create their own workout as well as meal plan. This application takes all the guess work out and allows users to feel confident in accomplishing their fitness goals. 
 
-### `npm start`
+## Dependencies 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Heroku 
+- React 
+- SQLAlchemy 
+- Flask
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - ### User Experience 
+      Any user will be able to start learning more about exercises and foods. User will be able to add them and delete them by their choice if they want to learn more or are no longer wanting to learn about the exercise or food. 
+      
+      - ### Add Exercises 
+          A user will be able to add exercises on the home page based on the exercise, exercise type, muscle group, and reps.
+          
+      - ### Add Foods 
+           A user will be able to add foods on the home page based on the food, macro type, total macros, and total calories.
+           
+      - ### Learn about Exercises 
+          A user will be able to learn more details about each Exercise on the home page. 
+          
+       - ### Learn about Foods 
+          A user will be able to learn more details about each Food on the home page. 
+          
+      - #### View
+          User will be able to view all exercises and foods along with the recommendations on the home page. 
+            
+            - ##### View Exercises 
+                User will be able to view exercises on the home page. 
+            
+             - ##### View Foods 
+                User will be able to view foods on the home page. 
+         
+       - #### Search
+            
+        - ##### Search Exercises 
+            User will be able to search for different exercises from the search bar above the exercises. 
+        - ##### Search Foods 
+            User will be able to search for different foods from the search bar above the foods. 
+        
+          
+      
