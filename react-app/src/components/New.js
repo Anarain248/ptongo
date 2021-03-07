@@ -46,8 +46,10 @@ const New = () => {
                 <label>Exercise: </label>
                 <select
                 value={name}
+                defaultValue=""
                 onChange={(e) => setName(e.target.value)}
                 >
+                    <option value="Stiff Leg Deadlifts" hidden>Select Exercise</option>
                     <option value="Stiff Leg Deadlifts">Stiff Leg Deadlifts</option>
                     <option value="Back Squats">Back Squats</option>
                     <option value="Bench Press">Bench Press</option>
@@ -63,6 +65,7 @@ const New = () => {
                 value={type}
                 onChange={(e) => setType(e.target.value)}
                 >
+                    <option value="compound" hidden>Select Exercise Type</option>
                     <option value="compound">Compound</option>
                     <option value="isolation">Isolation</option>
                 </select>
@@ -71,6 +74,7 @@ const New = () => {
                 value={muscle}
                 onChange={(e) => setMuscle(e.target.value)}
                 >
+                    <option value="Chest" hidden>Select Muscle Group</option>
                     <option value="Chest">Chest</option>
                     <option value="Back">Back</option>
                     <option value="Quads">Quads</option>
@@ -92,6 +96,7 @@ const New = () => {
                 value={rep}
                 onChange={(e) => setRep(e.target.value)}
                 >
+                    <option value="3-5 reps" hidden>Select Reps</option>
                     <option value="3-5 reps">3-5 reps</option>
                     <option value="8-12 reps">8-12 reps</option>
                     <option value="12-15 reps">12-15 reps</option>

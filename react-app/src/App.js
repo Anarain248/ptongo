@@ -14,27 +14,35 @@ import ProtectedRoute from "./components/auth/ProtectedRoute";
 import UsersList from "./components/UsersList";
 import User from "./components/User";
 import { authenticate } from './components/auth/authenticate';
+import Levelone from './components/Levelone';
+import Leveltwo from './components/Leveltwo';
+import Levelthree from './components/Levelthree';
+import Levelfour from './components/Levelfour';
+import Foods from './components/Foods';
+import Foodstwo from './components/Foodstwo';
+import Foodshome from './components/Foodshome';
+import Timer from './components/Timer';
 
 
 function App() {
 
-  const [authenticated, setAuthenticated] = useState(false);
-  const [loaded, setLoaded] = useState(false);
+  // const [authenticated, setAuthenticated] = useState(false);
+  // const [loaded, setLoaded] = useState(false);
 
-  useEffect(() => {
-    (async() => {
-      const user = await authenticate();
-      console.log(user)
-      if (!user.errors) {
-        setAuthenticated(true);
-      }
-      setLoaded(true);
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async() => {
+  //     const user = await authenticate();
+  //     console.log(user)
+  //     if (!user.errors) {
+  //       setAuthenticated(true);
+  //     }
+  //     setLoaded(true);
+  //   })();
+  // }, []);
 
-  if (!loaded) {
-    return null;
-  }
+  // if (!loaded) {
+  //   return null;
+  // }
   return (
     <Router>
     <div className="App">
@@ -44,20 +52,32 @@ function App() {
         <Route exact path="/">
             <SplashPage />
           </Route>
-          <Route path="/home">
+          <Route exact path="/home">
             <Home />
           </Route>
-          <Route path="/sign-up" exact={true}>
-          <SignUpForm authenticated={authenticated} setAuthenticated={setAuthenticated} />
-        </Route>
-          <Route path="/login">
-            <LoginForm authenticated={authenticated} setAuthenticated={setAuthenticated}/>
+          <Route path="/levelone">
+            <Levelone />
           </Route>
-          <Route path="/new">
-            <New />
+          <Route path="/leveltwo">
+            <Leveltwo />
           </Route>
-          <Route  path="/newFood">
-            <NewFood />
+          <Route path="/levelthree">
+            <Levelthree />
+          </Route>
+          <Route path="/levelfour">
+            <Levelfour />
+          </Route>
+          <Route path="/proteinfoods">
+            <Foodstwo />
+          </Route>
+          <Route path="/carbohydratefoods">
+            <Foods />
+          </Route>
+          <Route path="/foodshome">
+            <Foodshome />
+          </Route>
+          <Route path="/timer">
+            <Timer />
           </Route>
         </Switch>
 

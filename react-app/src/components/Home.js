@@ -1,76 +1,29 @@
-import logo from '../arjun-logo.png'
+import {Link} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-import {useState, useEffect} from 'react';
-import ExerciseList from './ExerciseList';
-import picture from '../fitness.jpg';
-import FoodList from './FoodList';
-import foodpic from '../food.jpg'
-import fit2 from '../fit2.jpg';
-import fit3 from '../fit3.jpg';
-import fit4 from '../fit4.jpg';
-import food3 from '../food3.jpg';
-import food4 from '../food4.jpg';
-import food5 from '../food5.jpg';
-
+import logo from '../arjun-logo.png'
 
 const Home = () => {
-    const [err, setErr] = useState([]);
-    const [exercises, setExercises] = useState([]);
-    const [foods, setFoods] = useState([]);
-
-
-    const deleteHandle = (id) => {
-        const newExercises = exercises.filter(exercise => exercise.id !== id)
-        setExercises(newExercises)
-    }
-
-    const deleteHandleFood = (id) => {
-        const newFoods = foods.filter(food => food.id !== id)
-        setFoods(newFoods)
-    }
-
-   
-
-    useEffect(() => {
-
-        (async () => {
-          const response = await fetch(`/api/exercises`);
-          const {exercises: fetchedExercises} = await response.json();
-          setExercises(fetchedExercises);
-        })();
-      }, []);
-
-      useEffect(() => {
-
-        (async () => {
-          const response = await fetch(`/api/foods`);
-          const {foods: fetchedFoods} = await response.json();
-          setFoods(fetchedFoods);
-        })();
-      }, []);
-
-
-
-
     return (
-        <div className="Homepage">
-            {err && <div>{err}</div>}
-            <img className="fit3" src={fit3}/>
-            <img className="fit4" src={fit4}/>
+        <div className="setLinks">
 
             <img src={logo}/>
+             <Link to="/levelone" className="button1">
 
+                <Button variant="contained" color="secondary" > Level 1</Button>
+                </Link>
+                <Link to="/leveltwo" className="button1">
 
-         {exercises && <ExerciseList exercises={exercises} deleteHandle={deleteHandle}/>}
+                <Button variant="contained" color="secondary" > Level 2</Button>
+                </Link>
+                <Link to="/levelthree" className="button1">
 
-         <img className="food3" src={food3}/>
-         <img className="food3" src={food4}/>
+                <Button variant="contained" color="secondary" > Level 3</Button>
+                </Link>
+                <Link to="/levelfour" className="button1">
 
-
-         {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>}
-
+                <Button variant="contained" color="secondary" > Level 4</Button>
+                </Link>
         </div>
-
     );
 }
 

@@ -2,19 +2,19 @@ from app.models import db, Exercise
 
 def seed_exercise():
 
-    data = Exercise(name='Barbell Squats',
+    data = Exercise(name='Bodyweight Squats',
      exercisetype='Compound',
-     reps='Strength: 3-5 reps, Hypertrophy: 8-12 reps, Endurance: 15-25 reps',
+     reps='5 sets of 5 reps',
      primarymuscle='Quads, HamStrings, Glutes')
 
-    data2 = Exercise(name='Bench Press',
+    data2 = Exercise(name='Regular Pushups',
      exercisetype='Compound',
-     reps='Strength: 3-5 reps, Hypertrophy: 8-12 reps, Endurance: 15-25 reps',
+     reps='5 sets of 5 reps',
      primarymuscle='Chest, Shoulders, Triceps')
 
-    data3 = Exercise(name='Stiff Leg Deadlifts',
+    data3 = Exercise(name='Stiff Leg bodyweight Deadlifts',
      exercisetype='Compound',
-     reps='Strength: 3-5 reps, Hypertrophy: 8-12 reps, Endurance: 15-25 reps',
+     reps='5 sets of 5 reps',
      primarymuscle='HamStrings, Glutes')
 
     db.session.add(data)

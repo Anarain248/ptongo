@@ -14,21 +14,19 @@ const Navigation = ({setAuthenticated}) => {
     return (
         <nav className="navigation">
             <div className="setLinks">
-               <Link to="/home" className="button1">
+            <Link to="/home" className="button1">
                 <Button variant="contained" color="secondary" ><HomeIcon /> Home</Button>
                 </Link>
-                <Link to="/newFood" className="button3">
-                <Button variant="contained" color="secondary"><ControlPointIcon />New Food</Button>
+                <Link to="/foodshome" className="button3">
+                <Button variant="contained" color="secondary">Healthy Foods</Button>
                 </Link>
                 {/* <Link to="/sign-up" className="active">
                 <Button variant="contained" color="secondary" >Sign Up</Button>
                 </Link> */}
-                <Link to="/new" className="button2">
-                <Button  variant="contained"  color="secondary" ><ControlPointIcon />New Exercise</Button>
-                </Link>
                 <Link to="/" className="button3">
-                <Button  variant="contained"  color="secondary" ><ExitToAppIcon />Exit Demo</Button>
+                <Button  variant="contained"  color="secondary" ><ExitToAppIcon />Exit</Button>
                 </Link>
+
 
                 {/* <LogoutButton setAuthenticated={setAuthenticated} /> */}
 

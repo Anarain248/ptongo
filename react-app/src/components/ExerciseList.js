@@ -9,7 +9,7 @@ const ExerciseList = ({exercises, header, deleteHandle}) => {
 const [search, setSearch] = useState('');
 const [filteredexercises, setFilteredexercises] = useState([])
 const [searched, setSearched] = useState('');
-console.log(exercises, '!!!!!!!!!!!!!!!!')
+console.log(exercises, '!!!!!!!!')
     const handleSubmit = () => {
         setFilteredexercises([]);
      }
@@ -42,7 +42,7 @@ console.log(exercises, '!!!!!!!!!!!!!!!!')
                         <Link to={`/exercises/${exercise.id}`}>
                         <h2>{exercise.name}</h2>
                         <p>Muscles Worked: {exercise.primarymuscle}</p>
-                        <p>Type: {exercise.exerciseType}</p>
+                        {/* <p>Type: {exercise.exerciseType}</p> */}
                         <p>Reps: {exercise.reps}</p>
                         </Link>
                     </div>
@@ -51,17 +51,17 @@ console.log(exercises, '!!!!!!!!!!!!!!!!')
                 ) : ('')
              }
               {filteredexercises.length ?  <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSubmit}>Clear Search</Button>: ''}
-             <h3>Recommended Exercises:</h3>
+             <h3>Recommended Workout:</h3>
 
             {exercises.map((exercise) => (
                 <div className="exercise-preview" key={exercise.id}>
-                    <Link to={`/exercises/${exercise.id}`}>
+
                     <h2>{exercise.name}</h2>
                     <p>Muscles Worked: {exercise.primarymuscle}</p>
-                    <p>Type: {exercise.exerciseType}</p>
+                    {/* <p>Type: {exercise.exerciseType}</p> */}
                     <p>Reps: {exercise.reps}</p>
-                    </Link>
-                    <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}> <DeleteIcon />Delete Exercise</Button>
+                   
+                    <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}> <DeleteIcon />Complete Exercise</Button>
 
                     </div>
                     )

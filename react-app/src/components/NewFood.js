@@ -39,6 +39,7 @@ const NewFood = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 >
+                    <option value="Turkey" hidden>Select Food</option>
                     <option value="Banana">Banana</option>
                     <option value="Turkey">Turkey</option>
                     <option value="Salmon">Salmon</option>
@@ -52,6 +53,7 @@ const NewFood = () => {
                 value={macro}
                 onChange={(e) => setMacro(e.target.value)}
                 >
+                    <option value="Protein" hidden>Select Macro Type</option>
                     <option value="Protein">Protein</option>
                     <option value="Carbohydrate">Carbohydrate</option>
                     <option value="Fats">Fats</option>
@@ -61,7 +63,8 @@ const NewFood = () => {
                 value={total}
                 onChange={(e) => setTotal(e.target.value)}
                 >
-                    <option value="30 grams carbs">Banana Macros: 30 grams carbs</option>
+                    <option value="" hidden>Select Total Macros</option>
+                    <option value="30 grams carbs" >Banana Macros: 30 grams carbs</option>
                     <option value="8 grams protein per 1 oz">"Turkey Macros: 8 grams protein per 1 oz"</option>
                     <option value="17 grams protein per 3 oz">"Salmon Macros: 17 grams protein per 3 oz"</option>
                     <option value="27 grams protein per 1 cup">"Oatmeal Cooked Macros: 27 grams protein per 1 cup"</option>
@@ -73,6 +76,7 @@ const NewFood = () => {
                 value={calories}
                 onChange={(e) => setCalories(e.target.value)}
                 >
+                     <option value="105 calories per banana" hidden>Select Total Calories</option>
                      <option value="105 calories per banana">Banana Calories: 105 calories per banana</option>
                      <option value="55 calories per 1 oz">Turkey Calories: 55 calories per 1 oz</option>
                      <option value="177 calories per 3 oz">Salmon Calories: 177 calories per 3 oz</option>

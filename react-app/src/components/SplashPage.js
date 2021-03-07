@@ -20,9 +20,9 @@ const SplashPage = () =>
     return (
         <div className ="splash-form">
             <img src={logo}/>
-            <h1 className="mission">Our mission is to make working out and dieting simpler for you!</h1>
+            <h1 className="mission">Our mission is to make working out fun for you! Bodyweight workouts you can do anywhere, anytime.</h1>
             <img className="food" src={food}/>
-            <form className="new-splash">
+            {/* <form className="new-splash">
         <label>
           Email
           <input
@@ -54,14 +54,14 @@ const SplashPage = () =>
 
         <div className="signupbutton">
         <Button variant="contained" color="secondary"type="submit">Sign Up Now!</Button>
-        </div>
-        <div className="demobutton">
+        </div> */}
+        {/* <div className="demobutton">
         <Button variant="contained" color="secondary"type="submit" onClick={SplashHandle}>Demo</Button>
-        </div>
+        </div> */}
         <div className= "loginbutton">
-        <Button variant="contained" color="secondary"type="submit">Login</Button>
+        <Button variant="contained" color="secondary"type="submit" onClick={SplashHandle}>Start Now!</Button>
         </div>
-        </form>
+
 
         </div>
     );
