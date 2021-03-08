@@ -13,6 +13,7 @@ from .api.exercises_routes import exercises_routes
 from .api.exercises_routestwo import exercises_routestwo
 from .api.exercises_routesthree import exercises_routesthree
 from .api.exercises_routesfour import exercises_routesfour
+from .api.exercises_routesfive import exercises_routesfive
 from .api.foods_routes import foods_routes
 from .api.foods_routestwo import foods_routestwo
 
@@ -38,6 +39,7 @@ app.register_blueprint(exercises_routes, url_prefix='/api/exercises')
 app.register_blueprint(exercises_routestwo, url_prefix='/api/exercisestwo')
 app.register_blueprint(exercises_routesthree, url_prefix='/api/exercisesthree')
 app.register_blueprint(exercises_routesfour, url_prefix='/api/exercisesfour')
+app.register_blueprint(exercises_routesfour, url_prefix='/api/exercisesfive')
 app.register_blueprint(foods_routes, url_prefix='/api/foods')
 app.register_blueprint(foods_routestwo, url_prefix='/api/foodstwo')
 db.init_app(app)
