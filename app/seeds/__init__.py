@@ -12,6 +12,7 @@ from .exercises9 import seed_exercisenine, undo_exercisesnine
 from .exercises10 import seed_exerciseten, undo_exercisesten
 from .foods import seed_food, undo_foods
 from .foods2 import seed_foodtwo, undo_foodstwo
+from .foods3 import seed_foodthree, undo_foodsthree
 
 
 seed_commands = AppGroup('seed')
@@ -31,6 +32,7 @@ def seed():
     seed_exerciseten()
     seed_food()
     seed_foodtwo()
+    seed_foodthree()
 
 @seed_commands.command('undo')
 def undo():
@@ -47,3 +49,4 @@ def undo():
     undo_exercisesten()
     undo_foods()
     undo_foodstwo()
+    undo_foodsthree()

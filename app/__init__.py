@@ -21,6 +21,7 @@ from .api.exercises_routesnine import exercises_routesnine
 from .api.exercises_routesten import exercises_routesten
 from .api.foods_routes import foods_routes
 from .api.foods_routestwo import foods_routestwo
+from .api.food_routesthree import foods_routesthree
 
 from .seeds import seed_commands
 
@@ -52,6 +53,7 @@ app.register_blueprint(exercises_routesnine, url_prefix='/api/exercisesnine')
 app.register_blueprint(exercises_routesten, url_prefix='/api/exercisesten')
 app.register_blueprint(foods_routes, url_prefix='/api/foods')
 app.register_blueprint(foods_routestwo, url_prefix='/api/foodstwo')
+app.register_blueprint(foods_routesthree, url_prefix='/api/foodsthree')
 db.init_app(app)
 Migrate(app, db)
 

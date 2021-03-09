@@ -12,3 +12,4 @@ from .exercisenine import Exercisenine
 from .exerciseten import Exerciseten
 from .food import Food
 from .foodtwo import Foodtwo
+from .foodthree import Foodthree
