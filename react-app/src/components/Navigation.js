@@ -20,6 +20,9 @@ const Navigation = ({setAuthenticated}) => {
                 <Link to="/foodshome" className="button3">
                 <Button variant="contained" color="secondary">Healthy Foods</Button>
                 </Link>
+                <Link to="/faqs" className="button3">
+                <Button variant="contained" color="secondary">Faqs</Button>
+                </Link>
                 {/* <Link to="/sign-up" className="active">
                 <Button variant="contained" color="secondary" >Sign Up</Button>
                 </Link> */}

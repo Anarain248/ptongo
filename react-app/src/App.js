@@ -24,6 +24,7 @@ import Levelseven from './components/Levelseven';
 import Leveleight from './components/Leveleight';
 import Levelnine from './components/Levelnine';
 import Levelten from './components/Levelten';
+import Faqs from './components/Faqs';
 import Foods from './components/Foods';
 import Foodstwo from './components/Foodstwo';
 import Foodshome from './components/Foodshome';
@@ -90,6 +91,9 @@ function App() {
           </Route>
           <Route path="/levelten">
             <Levelten />
+          </Route>
+          <Route path="/faqs">
+            <Faqs />
           </Route>
           <Route path="/proteinfoods">
             <Foodstwo />

@@ -46,6 +46,8 @@ const Home = () => {
                 <Link to="/levelten" className="button1">
                 <Button variant="contained" color="secondary" > Level 10</Button>
                 </Link>
+
+                
         </div>
     );
 }
