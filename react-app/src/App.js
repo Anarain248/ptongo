@@ -19,6 +19,11 @@ import Leveltwo from './components/Leveltwo';
 import Levelthree from './components/Levelthree';
 import Levelfour from './components/Levelfour';
 import Levelfive from './components/Levelfive';
+import Levelsix from './components/Levelsix'
+import Levelseven from './components/Levelseven';
+import Leveleight from './components/Leveleight';
+import Levelnine from './components/Levelnine';
+import Levelten from './components/Levelten';
 import Foods from './components/Foods';
 import Foodstwo from './components/Foodstwo';
 import Foodshome from './components/Foodshome';
@@ -70,6 +75,21 @@ function App() {
           </Route>
           <Route path="/levelfive">
             <Levelfive />
+          </Route>
+          <Route path="/levelsix">
+            <Levelsix />
+          </Route>
+          <Route path="/levelseven">
+            <Levelseven />
+          </Route>
+          <Route path="/leveleight">
+            <Leveleight />
+          </Route>
+          <Route path="/levelnine">
+            <Levelnine />
+          </Route>
+          <Route path="/levelten">
+            <Levelten />
           </Route>
           <Route path="/proteinfoods">
             <Foodstwo />
