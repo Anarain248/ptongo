@@ -24,6 +24,8 @@ const Faqs = () => {
               <h4>If you can't complete a workout within an hour, simply stay on that level for the next workout until you get there. The timer allows you to see how far you are from the goal. It can take some time to move to the next level which is completely okay! As you see, the goal time always stays at 60 minutes but the difficulty of the workouts increases as you go up in levels. This is part of the challenge, take your time in going up in levels.</h4>
               <h2>Are these full body workouts only?</h2>
               <h4>Yes, these are full body workouts only and are meant to be performed about 3 times per week. So if you're on a level, make sure to complete that level successfully within an hour atleast 3 times for that week before moving onto the next level.</h4>
+              <h2>How do I know which level to start at?</h2>
+              <h4>The levels are grouped in three categories of Beginner, Intermediate, and Advanced. Pick the level based on your experience level.</h4>
         </div>
      );
 }

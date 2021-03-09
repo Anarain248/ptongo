@@ -7,8 +7,9 @@ const Home = () => {
         <div className="setLinks">
 
             <img src={logo}/>
+            <h2>Beginner</h2>
              <Link to="/levelone" className="button1">
-                <Button variant="contained" color="secondary" > Level 1</Button>
+                <Button variant="contained" color="secondary" >Level 1</Button>
                 </Link>
 
                 <Link to="/leveltwo" className="button1">
@@ -19,6 +20,7 @@ const Home = () => {
                 <Button variant="contained" color="secondary" > Level 3</Button>
                 </Link>
 
+                <h2>Intermediate</h2>
                 <Link to="/levelfour" className="button1">
                 <Button variant="contained" color="secondary" > Level 4</Button>
                 </Link>
@@ -35,6 +37,7 @@ const Home = () => {
                 <Button variant="contained" color="secondary" > Level 7</Button>
                 </Link>
 
+                <h2>Advanced</h2>
                 <Link to="/leveleight" className="button1">
                 <Button variant="contained" color="secondary" > Level 8</Button>
                 </Link>
@@ -47,7 +50,7 @@ const Home = () => {
                 <Button variant="contained" color="secondary" > Level 10</Button>
                 </Link>
 
-                
+
         </div>
     );
 }

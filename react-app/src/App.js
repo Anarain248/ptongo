@@ -27,6 +27,7 @@ import Levelten from './components/Levelten';
 import Faqs from './components/Faqs';
 import Foods from './components/Foods';
 import Foodstwo from './components/Foodstwo';
+import Foodsthree from './components/Foodsthree';
 import Foodshome from './components/Foodshome';
 import Timer from './components/Timer';
 
@@ -100,6 +101,9 @@ function App() {
           </Route>
           <Route path="/carbohydratefoods">
             <Foods />
+          </Route>
+          <Route path="/fatsfoods">
+            <Foodsthree />
           </Route>
           <Route path="/foodshome">
             <Foodshome />

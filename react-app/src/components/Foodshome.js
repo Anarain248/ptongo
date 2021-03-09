@@ -17,9 +17,8 @@ const Foodshome = () => {
                 <Button variant="contained" color="secondary" > Carbohydrates List</Button>
                 </Link>
 
-                <Link to="/levelthree" className="button1">
-
-                <Button variant="contained" color="secondary" > Fats List</Button>
+                <Link to="/fatsfoods" className="button1">
+                <Button variant="contained" color="secondary" >Fats List</Button>
                 </Link>
         </div>
      );
