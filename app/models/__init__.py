@@ -5,5 +5,10 @@ from .exercisetwo import Exercisetwo
 from .exercisethree import Exercisethree
 from .exercisefour import Exercisefour
 from .exercisefive import Exercisefive
+from .exercisesix import Exercisesix
+from .exerciseseven import Exerciseseven
+from .exerciseeight import Exerciseeight
+from .exercisenine import Exercisenine
+from .exerciseten import Exerciseten
 from .food import Food
 from .foodtwo import Foodtwo

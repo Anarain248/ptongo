@@ -1,38 +1,38 @@
-from app.models import db, Exercisefive
+from app.models import db, Exercisesix
 
-def seed_exercisefive():
+def seed_exercisesix():
 
-    data = Exercisefive(name='Bodyweight Squats and Bodyweight lunges(Superset)',
+    data = Exercisesix(name='Bodyweight Squats and Bodyweight lunges(Superset)',
      exercisetype='Compound',
-     reps='5 sets of 15 reps',
+     reps='5 sets of 20 reps',
      primarymuscle='Quads, HamStrings, Glutes')
 
-    data2 = Exercisefive(name='Jump Squats',
+    data2 = Exercisesix(name='Jump Squats and Jump Lunges(Superset)',
      exercisetype='Compound',
-     reps='2 sets of 20 reps',
+     reps='2 sets of 15 reps',
      primarymuscle='Quads, HamStrings, Glutes')
 
-    data3 = Exercisefive(name='Regular Pushups',
+    data3 = Exercisesix(name='Regular Pushups',
      exercisetype='Compound',
      reps='5 sets of 20 reps',
      primarymuscle='Chest, Shoulders, Triceps')
 
-    data4 = Exercisefive(name='Stiff Leg Bodyweight Deadlifts',
+    data4 = Exercisesix(name='Stiff Leg Bodyweight Deadlifts',
      exercisetype='Compound',
      reps='5 sets of 20 reps',
      primarymuscle='HamStrings, Glutes')
 
-    data5 = Exercisefive(name='Close Grip Pushups',
+    data5 = Exercisesix(name='Close Grip Pushups',
      exercisetype='Isolation',
      reps='3 sets of 20 reps',
      primarymuscle='Triceps')
 
-    data6 = Exercisefive(name='Situps and Bicycles(Superset)',
+    data6 = Exercisesix(name='Situps and Bicycles(Superset)',
      exercisetype='Isolation',
-     reps='3 sets of 15 reps',
+     reps='3 sets of 20 reps',
      primarymuscle='Abs')
 
-    data7 = Exercisefive(name='Planks',
+    data7 = Exercisesix(name='Planks',
      exercisetype='Isolation',
      reps='3 sets of 45 seconds',
      primarymuscle='Abs')
@@ -46,7 +46,7 @@ def seed_exercisefive():
     db.session.add(data7)
     db.session.commit()
 
-def undo_exercisesfive():
+def undo_exercisessix():
 
     db.session.execute('TRUNCATE exercises CASCADE;')
     db.session.commit()

@@ -5,6 +5,11 @@ from .exercises2 import seed_exercisetwo, undo_exercisestwo
 from .exercises3 import seed_exercisethree, undo_exercisesthree
 from .exercises4 import seed_exercisefour, undo_exercisesfour
 from .exercises5 import seed_exercisefive, undo_exercisesfive
+from .exercises6 import seed_exercisesix, undo_exercisessix
+from .exercises7 import seed_exerciseseven, undo_exercisesseven
+from .exercises8 import seed_exerciseeight, undo_exerciseseight
+from .exercises9 import seed_exercisenine, undo_exercisesnine
+from .exercises10 import seed_exerciseten, undo_exercisesten
 from .foods import seed_food, undo_foods
 from .foods2 import seed_foodtwo, undo_foodstwo
 
@@ -19,6 +24,11 @@ def seed():
     seed_exercisethree()
     seed_exercisefour()
     seed_exercisefive()
+    seed_exercisesix()
+    seed_exerciseseven()
+    seed_exerciseeight()
+    seed_exercisenine()
+    seed_exerciseten()
     seed_food()
     seed_foodtwo()
 
@@ -30,5 +40,10 @@ def undo():
     undo_exercisesthree()
     undo_exercisesfour()
     undo_exercisesfive()
+    undo_exercisessix()
+    undo_exercisesseven()
+    undo_exerciseseight()
+    undo_exercisesnine()
+    undo_exercisesten()
     undo_foods()
     undo_foodstwo()
