@@ -21,14 +21,17 @@ const Levelfour = () => {
         })()
     }, [])
     return (
+        <>
+        <img className="logo" src={logo}/>
         <div className="Homepage">
 
-            <img src={logo}/>
+
 
             <Timer />
 
             {exercisesfour && <ExerciseListfour exercises={exercisesfour} deleteHandle={deleteHandle}/>}
         </div>
+        </>
      );
 }
 

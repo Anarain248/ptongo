@@ -21,17 +21,20 @@ const Levelthree = () => {
         })()
     }, [])
     return (
-<div className="Homepage">
+        <>
+        <img className="logo" src={logo}/>
+            <div className="Homepage">
             {/* {err && <div>{err}</div>} */}
             {/* <img className="fit3" src={fit3}/>
             <img className="fit4" src={fit4}/> */}
 
-            <img src={logo}/>
+
 
             <Timer />
 
             {exercisesthree && <ExerciseListthree exercises={exercisesthree} deleteHandle={deleteHandle}/>}
         </div>
+        </>
      );
 }
 

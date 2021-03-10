@@ -1,13 +1,17 @@
 import logo from '../arjun-logo.png'
 import Button from '@material-ui/core/Button';
 import {useState, useEffect} from 'react';
-import ExerciseListthree from './ExerciseListthree';
 import Timer from './Timer';
 import ExerciseListsix from './ExerciseListsix';
 
 
 const Levelsix = () => {
     const [exercisessix, setExercisesix] = useState([]);
+
+    const deleteHandle = (id) => {
+        const newExercises = exercisessix.filter(exercise => exercise.id !== id)
+        setExercisesix(newExercises)
+    }
 
     useEffect(() => {
         (async () => {
@@ -17,14 +21,17 @@ const Levelsix = () => {
         })()
     }, [])
     return (
+        <>
+        <img className="logo" src={logo}/>
         <div className="Homepage">
 
-        <img src={logo}/>
+
 
         <Timer />
 
-        {exercisessix && <ExerciseListsix exercises={exercisessix}/>}
+        {exercisessix && <ExerciseListsix exercises={exercisessix} deleteHandle={deleteHandle}/>}
         </div>
+        </>
     );
 }
 

@@ -20,15 +20,18 @@ const Levelfive = () => {
         })()
     })
     return (
+        <>
+        <img className="logo" src={logo}/>
         <div className="Homepage">
 
-            <img src={logo}/>
+            
 
             <Timer />
 
             {exercisesfive && <ExerciseListfive exercises={exercisesfive} deleteHandle={deleteHandle}/>}
 
         </div>
+        </>
      );
 }
 

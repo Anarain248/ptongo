@@ -8,6 +8,11 @@ import ExerciseListten from './ExerciseListten'
 const Levelten = () => {
     const [exercisesten, setExerciseten] = useState([]);
 
+    const deleteHandle = (id) => {
+        const newExercises = exercisesten.filter(exercise => exercise.id !== id)
+        setExerciseten(newExercises)
+    }
+
     useEffect(() => {
         (async () => {
             const res = await fetch(`/api/exercisesten`);
@@ -16,14 +21,15 @@ const Levelten = () => {
         })()
     }, [])
     return (
+        <>
+        <img className="logo" src={logo}/>
         <div className="Homepage">
-
-        <img src={logo}/>
 
         <Timer />
 
-        {exercisesten && <ExerciseListten exercises={exercisesten}/>}
+        {exercisesten && <ExerciseListten exercises={exercisesten} deleteHandle={deleteHandle}/>}
         </div>
+        </>
     );
 }
 

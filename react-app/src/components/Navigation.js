@@ -15,19 +15,19 @@ const Navigation = ({setAuthenticated}) => {
         <nav className="navigation">
             <div className="setLinks">
             <Link to="/home" className="button1">
-                <Button variant="contained" color="secondary" ><HomeIcon /> Home</Button>
+                <Button variant="outlined" color="secondary" ><HomeIcon /> Home</Button>
                 </Link>
                 <Link to="/foodshome" className="button3">
-                <Button variant="contained" color="secondary">Healthy Foods</Button>
+                <Button variant="outlined" color="secondary">Healthy Foods</Button>
                 </Link>
                 <Link to="/faqs" className="button3">
-                <Button variant="contained" color="secondary">Faqs</Button>
+                <Button variant="outlined" color="secondary">Faqs</Button>
                 </Link>
                 {/* <Link to="/sign-up" className="active">
                 <Button variant="contained" color="secondary" >Sign Up</Button>
                 </Link> */}
                 <Link to="/" className="button3">
-                <Button  variant="contained"  color="secondary" ><ExitToAppIcon />Exit</Button>
+                <Button  variant="outlined"  color="secondary" ><ExitToAppIcon />Exit</Button>
                 </Link>
 
 

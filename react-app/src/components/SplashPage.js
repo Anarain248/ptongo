@@ -1,7 +1,8 @@
 import logo from '../arjun-logo.png';
 import Button from '@material-ui/core/Button';
 import { useHistory } from 'react-router-dom';
-import food from '../food.jpg';
+import fit3 from '../fit3.jpg';
+import ptongo from '../ptongo.jpg'
 
 
 
@@ -18,10 +19,14 @@ const SplashPage = () =>
 
 
     return (
+      <>
+      <img className="logo" src={logo}/>
         <div className ="splash-form">
-            <img src={logo}/>
-            <h1 className="mission">Our mission is to make working out fun for you! Bodyweight workouts you can do anywhere, anytime.</h1>
-            <img className="food" src={food}/>
+
+
+            <h1 className="mission">Workout anytime, anywhere with full body bodyweight workouts. Level up your fitness.</h1>
+
+            <img className="fit3" src={ptongo}/>
             {/* <form className="new-splash">
         <label>
           Email
@@ -59,11 +64,12 @@ const SplashPage = () =>
         <Button variant="contained" color="secondary"type="submit" onClick={SplashHandle}>Demo</Button>
         </div> */}
         <div className= "loginbutton">
-        <Button variant="contained" color="secondary"type="submit" onClick={SplashHandle}>Start Now!</Button>
+        <Button variant="contained" color="secondary"type="submit" onClick={SplashHandle}>Start Your Fitness Journey Now!</Button>
         </div>
 
 
         </div>
+        </>
     );
 }
 

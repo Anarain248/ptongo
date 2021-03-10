@@ -2,10 +2,11 @@ import logo from '../arjun-logo.png'
 
 const Faqs = () => {
     return (
-        <div className="Homepage">
-              <img src={logo}/>
+        <>
+        <img className="logo" src={logo}/>
+        <div className="faqpage">
 
-              <h1>FAQs(All questions answered here):</h1>
+              <h1 className="title">Frequently Asked Questions:</h1>
               <h2>What is the point of PTonGo?</h2>
               <h4>PTonGo is an application that allows anyone to have access to various bodyweight workouts with diffrerent levels of difficulty. The purpose of this app is to make fitness fun and allow you to get in shape doing workouts that you can do anytime, anywhere. Along with that we have a foods list and recipes list to make nutrition simpler. It's an all in one fitness application.</h4>
               <h2>Are there only bodyweight workouts?</h2>
@@ -27,6 +28,7 @@ const Faqs = () => {
               <h2>How do I know which level to start at?</h2>
               <h4>The levels are grouped in three categories of Beginner, Intermediate, and Advanced. Pick the level based on your experience level.</h4>
         </div>
+        </>
      );
 }
 

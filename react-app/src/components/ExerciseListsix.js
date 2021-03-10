@@ -56,7 +56,7 @@ const ExerciseListsix = ({exercises, header, deleteHandle}) => {
                  <h3>Recommended Workout:</h3>
                  <h3>Key Terms:</h3>
                  <h4>Superset- Performing two exercises together without any rest between.</h4>
-
+                 
                 {exercises.map((exercise) => (
 
                     <div className="exercise-preview" key={exercise.id}>

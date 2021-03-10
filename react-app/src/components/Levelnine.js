@@ -8,6 +8,10 @@ const Levelnine = () => {
 
     const [exercisesnine, setExercisenine] = useState([]);
 
+    const deleteHandle = (id) => {
+        const newExercises = exercisesnine.filter(exercise => exercise.id !== id)
+        setExercisenine(newExercises)
+    }
 
     useEffect(() => {
         (async () => {
@@ -17,14 +21,17 @@ const Levelnine = () => {
         })()
     }, [])
     return (
+        <>
+        <img className="logo" src={logo}/>
         <div className="Homepage">
 
-            <img src={logo}/>
+          
 
             <Timer />
 
-            {exercisesnine && <ExerciseListnine exercises={exercisesnine} />}
+            {exercisesnine && <ExerciseListnine exercises={exercisesnine} deleteHandle={deleteHandle}/>}
         </div>
+        </>
      );
 }
 

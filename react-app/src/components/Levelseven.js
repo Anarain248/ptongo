@@ -8,6 +8,10 @@ import ExerciseListseven from './ExerciseListseven';
 const Levelseven = () => {
     const [exercisesseven, setExerciseseven] = useState([]);
 
+    const deleteHandle = (id) => {
+        const newExercises = exercisesseven.filter(exercise => exercise.id !== id)
+        setExerciseseven(newExercises)
+    }
     useEffect(() => {
         (async () => {
             const res = await fetch(`/api/exercisesseven`);
@@ -16,14 +20,17 @@ const Levelseven = () => {
         })()
     }, [])
     return (
+        <>
+        <img className="logo" src={logo}/>
         <div className="Homepage">
 
-        <img src={logo}/>
+
 
         <Timer />
 
-        {exercisesseven && <ExerciseListseven exercises={exercisesseven}/>}
+        {exercisesseven && <ExerciseListseven exercises={exercisesseven} deleteHandle={deleteHandle}/>}
         </div>
+        </>
     );
 }
 

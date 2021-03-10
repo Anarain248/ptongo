@@ -55,10 +55,12 @@ const Levelone = () => {
 
 
     return (
+      <>
+      <img className="logo" src={logo}/>
         <div className="Homepage">
             {err && <div>{err}</div>}
 
-            <img src={logo}/>
+
 
         <Timer />
          {exercises && <ExerciseList exercises={exercises} deleteHandle={deleteHandle}/>}
@@ -70,6 +72,7 @@ const Levelone = () => {
          {/* {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>} */}
 
         </div>
+        </>
 
     );
 }
