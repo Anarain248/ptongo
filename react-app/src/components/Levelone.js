@@ -32,7 +32,7 @@ const Levelone = () => {
     useEffect(() => {
 
         (async () => {
-          const response = await fetch(`/api/exercises`);
+          const response = await fetch(`/api/exercises/`);
           console.log(response)
           const {exercises: fetchedExercises} = await response.json();
           setExercises(fetchedExercises);
@@ -60,7 +60,7 @@ const Levelone = () => {
 
 
 
-  
+
          {exercises && <ExerciseList exercises={exercises} deleteHandle={deleteHandle}/>}
 
          {/* <img className="food3" src={food3}/>

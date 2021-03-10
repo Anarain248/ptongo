@@ -14,14 +14,14 @@ const deleteHandleFood = (id) => {
         useEffect(() => {
 
             (async () => {
-              const response = await fetch(`/api/foods`);
+              const response = await fetch(`/api/foods/`);
               const {foods: fetchedFoods} = await response.json();
               setFoods(fetchedFoods);
             })();
           }, []);
     return (
         <div className="Homepage">
-            
+
             <img src={logo}/>
 
             {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>}

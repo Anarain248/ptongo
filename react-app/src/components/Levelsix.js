@@ -15,7 +15,7 @@ const Levelsix = () => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`/api/exercisessix`);
+            const res = await fetch(`/api/exercisessix/`);
             const {exercisessix: fetchedExercise} = await res.json();
             setExercisesix(fetchedExercise)
         })()

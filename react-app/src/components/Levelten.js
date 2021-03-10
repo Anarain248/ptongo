@@ -15,7 +15,7 @@ const Levelten = () => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`/api/exercisesten`);
+            const res = await fetch(`/api/exercisesten/`);
             const {exercisesten: fetchedExercise} = await res.json();
             setExerciseten(fetchedExercise)
         })()

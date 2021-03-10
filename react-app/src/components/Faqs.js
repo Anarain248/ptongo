@@ -1,4 +1,5 @@
-import logo from '../arjun-logo.png'
+import logo from '../arjun-logo.png';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
 const Faqs = () => {
     return (
@@ -6,7 +7,7 @@ const Faqs = () => {
         <img className="logo" src={logo}/>
         <div className="faqpage">
 
-              <h1 className="title">Frequently Asked Questions:</h1>
+              <h1 className="title"><HelpOutlineIcon />Frequently Asked Questions<HelpOutlineIcon /></h1>
               <h2>What is the point of PTonGo?</h2>
               <h4>PTonGo is an application that allows anyone to have access to various bodyweight workouts with diffrerent levels of difficulty. The purpose of this app is to make fitness fun and allow you to get in shape doing workouts that you can do anytime, anywhere. Along with that we have a foods list and recipes list to make nutrition simpler. It's an all in one fitness application.</h4>
               <h2>Are there only bodyweight workouts?</h2>

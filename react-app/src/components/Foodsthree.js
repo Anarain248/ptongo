@@ -8,7 +8,7 @@ const [foodsthree, setFoodsthree] = useState([]);
 
 useEffect(() => {
     (async () => {
-        const res = await fetch(`/api/foodsthree`)
+        const res = await fetch(`/api/foodsthree/`)
         const {foodsthree: fetchedFoods} = await res.json();
         setFoodsthree(fetchedFoods);
     })()

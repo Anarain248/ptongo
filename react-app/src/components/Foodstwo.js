@@ -8,7 +8,7 @@ const [foodstwo, setFoodstwo] = useState([]);
 
 useEffect(() => {
     (async () => {
-        const res = await fetch(`/api/foodstwo`)
+        const res = await fetch(`/api/foodstwo/`)
         const {foodstwo: fetchedFoods} = await res.json();
         setFoodstwo(fetchedFoods);
     })()

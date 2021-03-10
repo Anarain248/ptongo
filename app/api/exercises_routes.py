@@ -1,4 +1,4 @@
-from flask_login import login_required
+# from flask_login import login_required
 from app.models import Exercise, db
 from flask import Blueprint, request
 

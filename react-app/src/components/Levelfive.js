@@ -14,7 +14,7 @@ const Levelfive = () => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`/api/exercisesfive`);
+            const res = await fetch(`/api/exercisesfive/`);
             const {exercisesfive: fetchedExercise} = await res.json();
             setExercisefive(fetchedExercise)
         })()
@@ -27,7 +27,7 @@ const Levelfive = () => {
 
 
 
-            
+
 
             {exercisesfive && <ExerciseListfive exercises={exercisesfive} deleteHandle={deleteHandle}/>}
 

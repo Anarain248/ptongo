@@ -19,3 +19,5 @@ def saved_exercises():
     db.session.add(exercise)
     db.session.commit()
     return {'exercise': exercise.to_dict()}
+
+

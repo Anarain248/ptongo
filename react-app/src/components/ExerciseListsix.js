@@ -34,7 +34,7 @@ const ExerciseListsix = ({exercises, header, deleteHandle}) => {
 
 
                 <div>
-                    <TextField id="standard-basic" label="Search" className="search" type="text" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)} />
+                    <TextField id="standard-basic" label="Search Exercise" className="search" type="text" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)} />
                     <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSearch}><SearchIcon /></Button>
                 </div>
                 {filteredexercises.length ? <h3>Search Results:</h3>: ''}

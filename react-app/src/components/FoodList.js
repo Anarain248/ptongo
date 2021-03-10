@@ -33,7 +33,7 @@ const FoodList = ({foods, header, deleteHandleFood}) => {
     return (
         <div className="foods-list">
             <div>
-                <TextField id="standard-basic" label="Search" className="search" type="text" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)} />
+                <TextField id="standard-basic" label="Search Food" className="search" type="text" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)} />
                 <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSearch}><SearchIcon /></Button>
             </div>
             {filteredfoods.length ? <h3>Search Results:</h3>: ''}

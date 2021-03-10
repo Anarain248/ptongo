@@ -14,7 +14,7 @@ const Levelseven = () => {
     }
     useEffect(() => {
         (async () => {
-            const res = await fetch(`/api/exercisesseven`);
+            const res = await fetch(`/api/exercisesseven/`);
             const {exercisesseven: fetchedExercise} = await res.json();
             setExerciseseven(fetchedExercise)
         })()
@@ -27,7 +27,7 @@ const Levelseven = () => {
 
 
 
-       
+
 
         {exercisesseven && <ExerciseListseven exercises={exercisesseven} deleteHandle={deleteHandle}/>}
         </div>

@@ -60,7 +60,7 @@ def seed_food():
     data12 = Food(name='Black Beans',
      primarymacro='Carbohydrate',
      totalmacros='40 grams Carbohydrates per cup',
-     totalcalories='225 calories')
+     totalcalories='225 calories per cup')
 
     data13 = Food(name='Lentils',
      primarymacro='Carbohydrate',
