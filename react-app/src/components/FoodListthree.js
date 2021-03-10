@@ -45,8 +45,8 @@ const FoodListthree = ({foods, header, deleteHandleFood}) => {
                         {/* <Link to={`/exercises/${food.id}`}> */}
                         <h2>{food.name}</h2>
                         <p>Primary Macronutrient: {food.primarymacro}</p>
-                        <p>Type: {food.totalmacros}</p>
-                        <p>Reps: {food.totalcalories}</p>
+                        <p>Total Macronutrients: {food.totalmacros}</p>
+                        <p>Total Calories: {food.totalcalories}</p>
                         {/* </Link> */}
                     </div>
                     )

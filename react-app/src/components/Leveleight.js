@@ -19,14 +19,16 @@ const Leveleight = () => {
         })()
     }, [])
     return (
+        <>
+        <img className="logo" src={logo}/>
+        <Timer />
         <div className="Homepage">
 
-            <img src={logo}/>
 
-            <Timer />
 
             {exerciseseight && <ExerciseListeight exercises={exerciseseight} deleteHandle={deleteHandle}/>}
         </div>
+        </>
      );
 }
 

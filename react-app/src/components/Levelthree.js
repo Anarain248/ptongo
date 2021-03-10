@@ -23,6 +23,7 @@ const Levelthree = () => {
     return (
         <>
         <img className="logo" src={logo}/>
+        <Timer />
             <div className="Homepage">
             {/* {err && <div>{err}</div>} */}
             {/* <img className="fit3" src={fit3}/>
@@ -30,7 +31,7 @@ const Levelthree = () => {
 
 
 
-            <Timer />
+
 
             {exercisesthree && <ExerciseListthree exercises={exercisesthree} deleteHandle={deleteHandle}/>}
         </div>

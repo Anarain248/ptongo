@@ -4,6 +4,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import TextField from '@material-ui/core/TextField';
 import {useState} from 'react';
 import DeleteIcon from '@material-ui/icons/Delete';
+import WhatshotIcon from '@material-ui/icons/Whatshot';
 
 
 const ExerciseListfive = ({exercises, header, deleteHandle}) => {
@@ -53,7 +54,7 @@ const ExerciseListfive = ({exercises, header, deleteHandle}) => {
                     ) : ('')
                  }
                   {filteredexercises.length ?  <Button  variant="contained" color="secondary" href="#contained-buttons" onClick={handleSubmit}>Clear Search</Button>: ''}
-                 <h3>Recommended Workout:</h3>
+                 <h3>Level 5 Workout:</h3>
                  <h3>Key Terms:</h3>
                  <h4>Superset- Performing two exercises together without any rest between.</h4>
 
@@ -66,7 +67,7 @@ const ExerciseListfive = ({exercises, header, deleteHandle}) => {
                         {/* <p>Type: {exercise.exerciseType}</p> */}
                         <p>Reps: {exercise.reps}</p>
 
-                        <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}> <DeleteIcon />Complete Exercise</Button>
+                        <Button  variant="contained" color="secondary" href="#contained-buttons"onClick={() => deleteHandle(exercise.id)}> <WhatshotIcon />Complete Exercise</Button>
 
                         </div>
                         )

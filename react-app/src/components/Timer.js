@@ -14,17 +14,19 @@ const Timer = ({expiryTimestamp}) => {
         reset,
     } = useStopwatch({ autoStart: false })
     return (
-        <div >
-            <h2> <AccessTimeIcon />Workout  Timer</h2>
+        <div className="timer">
+            <h2> <AccessTimeIcon />Workout Timer</h2>
             <p>Goal Time: 1 hour</p>
             <div style={{fontSize: '50px'}}>
              <span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
             </div>
-            <Button onClick={start} variant="contained" color="secondary">Start</Button>
 
-            <Button onClick={pause} variant="contained" color="secondary">Pause</Button>
+            <Button onClick={start} variant="outlined" color="primary">Start</Button>
 
-            <Button onClick={reset} variant="contained" color="secondary" >Reset</Button>
+            <Button onClick={pause} variant="outlined" color="primary">Pause</Button>
+
+            <Button onClick={reset} variant="outlined" color="primary" >Reset</Button>
+
         </div>
     );
 }

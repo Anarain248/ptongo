@@ -23,11 +23,12 @@ const Levelfour = () => {
     return (
         <>
         <img className="logo" src={logo}/>
+        <Timer />
         <div className="Homepage">
 
 
 
-            <Timer />
+
 
             {exercisesfour && <ExerciseListfour exercises={exercisesfour} deleteHandle={deleteHandle}/>}
         </div>

@@ -23,11 +23,12 @@ const Levelnine = () => {
     return (
         <>
         <img className="logo" src={logo}/>
+        <Timer />
         <div className="Homepage">
 
-          
 
-            <Timer />
+
+
 
             {exercisesnine && <ExerciseListnine exercises={exercisesnine} deleteHandle={deleteHandle}/>}
         </div>

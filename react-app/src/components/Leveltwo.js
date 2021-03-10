@@ -24,13 +24,14 @@ const Leveltwo = () => {
     return (
         <>
         <img className="logo" src={logo}/>
+        <Timer />
         <div className="Homepage">
             {/* {err && <div>{err}</div>} */}
             {/* <img className="fit3" src={fit3}/>
             <img className="fit4" src={fit4}/> */}
 
 
-            <Timer />
+
 
             {exercisestwo && <ExerciseListtwo exercises={exercisestwo} deleteHandle={deleteHandle}/>}
 

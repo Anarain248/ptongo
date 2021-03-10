@@ -134,6 +134,7 @@
     text-align: left;
       padding: 10px;
     margin-top: 30px;
+    margin-bottom: 50px;
     position: relative;
 }
 .title {
@@ -178,11 +179,28 @@
     text-decoration: none;
     padding: 10px;
 }
+.button2 {
+        text-decoration: none;
+        padding: 5px;
+        display: flex;
+        margin-left: 10px;
+}
+
+.foodhome {
+margin-left: 30px;
+}
+
 .loginbutton {
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 10px;
     margin:auto;
 }
+
+.timer {
+ margin-left: 20px;
+ text-align: center;
+}
+
 .demobutton {
     margin-top: 10px;
     padding: 10px;
@@ -261,8 +279,8 @@
 
 .fit4 {
     position: absolute;
-    width: 475px;
-    height: 450px;
+    width: 450px;
+    height: 370px;
     border-radius: 20%;
     margin-left: 550px;;
     margin-top: -90px;
@@ -271,13 +289,15 @@
 
 .fit5 {
     position: absolute;
-    width: 475px;
-    height: 400px;
+    width: 450px;
+    height: 370px;
     border-radius: 20%;
-    margin-left: 650px;;
-    margin-top: -90px;
+    margin-left: 550px;;
+    margin-top: -130px;
     border: 2px solid black;
 }
+
+
 
 .logo {
     margin-top: 50px;

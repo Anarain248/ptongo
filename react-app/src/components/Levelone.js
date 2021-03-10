@@ -8,9 +8,6 @@ import foodpic from '../food.jpg'
 import fit2 from '../fit2.jpg';
 import fit3 from '../fit3.jpg';
 import fit4 from '../fit4.jpg';
-import food3 from '../food3.jpg';
-import food4 from '../food4.jpg';
-import food5 from '../food5.jpg';
 import Timer from './Timer';
 
 
@@ -57,12 +54,13 @@ const Levelone = () => {
     return (
       <>
       <img className="logo" src={logo}/>
+      <Timer />
         <div className="Homepage">
             {err && <div>{err}</div>}
 
 
 
-        <Timer />
+  
          {exercises && <ExerciseList exercises={exercises} deleteHandle={deleteHandle}/>}
 
          {/* <img className="food3" src={food3}/>

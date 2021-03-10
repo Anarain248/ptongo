@@ -23,9 +23,10 @@ const Levelten = () => {
     return (
         <>
         <img className="logo" src={logo}/>
+        <Timer />
         <div className="Homepage">
 
-        <Timer />
+
 
         {exercisesten && <ExerciseListten exercises={exercisesten} deleteHandle={deleteHandle}/>}
         </div>

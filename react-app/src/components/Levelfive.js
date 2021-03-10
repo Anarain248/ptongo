@@ -22,11 +22,12 @@ const Levelfive = () => {
     return (
         <>
         <img className="logo" src={logo}/>
+        <Timer />
         <div className="Homepage">
 
-            
 
-            <Timer />
+
+            
 
             {exercisesfive && <ExerciseListfive exercises={exercisesfive} deleteHandle={deleteHandle}/>}
 
