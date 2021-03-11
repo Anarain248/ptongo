@@ -16,7 +16,7 @@ useEffect(() => {
 return (
     <div className="Homepage">
 
-        <img src={logo}/>
+        <img className="logo" src={logo}/>
 
         {foodsthree && <FoodListthree foods={foodsthree}/>}
 

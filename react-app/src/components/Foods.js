@@ -22,7 +22,7 @@ const deleteHandleFood = (id) => {
     return (
         <div className="Homepage">
 
-            <img src={logo}/>
+            <img className="logo" src={logo}/>
 
             {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>}
 
