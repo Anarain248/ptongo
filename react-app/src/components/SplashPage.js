@@ -65,6 +65,7 @@ const SplashPage = () =>
         </div> */}
         <div className= "loginbutton">
         <Button variant="contained" color="secondary"type="submit" onClick={SplashHandle}>Start Your Fitness Journey Now!</Button>
+        <Button variant="contained" color="secondary"type="submit" onClick={SplashHandle}>Demo</Button>
         </div>
 
 

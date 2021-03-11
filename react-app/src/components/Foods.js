@@ -20,13 +20,16 @@ const deleteHandleFood = (id) => {
             })();
           }, []);
     return (
+        <>
+        <img className="logo" src={logo}/>
         <div className="Homepage">
 
-            <img className="logo" src={logo}/>
+
 
             {foods && <FoodList foods={foods} deleteHandleFood={deleteHandleFood}/>}
 
         </div>
+        </>
 
 
      );

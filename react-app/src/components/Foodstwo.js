@@ -14,13 +14,16 @@ useEffect(() => {
     })()
 }, [])
 return (
+    <>
+    <img className="logo" src={logo}/>
     <div className="Homepage">
 
-        <img className="logo" src={logo}/>
+
 
         {foodstwo && <FoodListtwo foods={foodstwo}/>}
 
     </div>
+    </>
 )
 
 }
