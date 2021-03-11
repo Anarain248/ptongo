@@ -6,13 +6,15 @@
 - [Dependencies](#dependencies)
 - [Features](#features)
 	- [User Experience](#userexperience)
-		- [Add Exercises](#add-exercise)
-		- [Add Foods](#add-food)
-		- [Learn about Exercises](#learn-exercise)
-		- [Learn about Foods](#learn-food)
-		- [View](#view)
-			- [View Exercises](#view-exercises)
-			- [View Foods](#view-foods)
+		- [Select Levels](#select-levels)
+		- [Complete Exercise](#complete-exercise)
+		- [Start Timer](#start-timer)
+		- [Pause Timer](#pause-timer)
+		- [Reset Timer](#reset-timer)
+		- [Select Macronutrient list](#select-macronutrientlist)
+	- [View](#view)
+		- [View Exercises](#view-exercises)
+		- [View Foods](#view-foods)
 	- [Search](#search)
 	  - [Search Exercises](#search-exercise)
 	  - [Search Foods](#search-food)
@@ -20,7 +22,7 @@
 
 ## Introduction
 
-PtonGo is a fitness application that allows users to learn about different exercises and foods. The main purpose of the application is to educate users on details about the various popular exercises and foods so that they can create their own workout as well as meal plan. This application takes all the guess work out and allows users to feel confident in accomplishing their fitness goals. 
+PtonGo is a fitness application game that allows users to have a fun fitness experience. There are 10 levels with varying levels of difficulty and a timer to time their workouts. There is also a healthy foods section which gives users the exact calories and macronutrients for a variety of foods. 
 
 ## Dependencies 
 
@@ -32,32 +34,35 @@ PtonGo is a fitness application that allows users to learn about different exerc
 ## Features 
 
   - ### User Experience 
-      Any user will be able to start learning more about exercises and foods. User will be able to add them and delete them by their choice if they want to learn more or are no longer wanting to learn about the exercise or food. 
+      Any user will have access to the 10 levels and start the workouts along with having access to the food lists.   
       
-      - ### Add Exercises 
-          A user will be able to add exercises on the home page based on the exercise, exercise type, muscle group, and reps.
+      - ### Select Levels 
+          A user will be able to select levels of their choice and there will be a different workout for each level. 
           
-      - ### Add Foods 
-           A user will be able to add foods on the home page based on the food, macro type, total macros, and total calories.
+      - ### Complete Exercise 
+           A user will be able to delete exercises as they complete them to track the progress of their workout with a complete exercise button.
            
-      - ### Learn about Exercises 
-          A user will be able to learn more details about each Exercise on the home page. 
+      - ### Start Timer
+          A user will be able to start the timer in a workout by clicking the start button.
           
-       - ### Learn about Foods 
-          A user will be able to learn more details about each Food on the home page. 
+       - ### Pause Timer 
+          A user will be able to pause the timer in a workout by clicking the pause button.
+	  
+       - ### Reset Timer 
+          A user will be able to rest the timer in a workout by clicking the reset button.
           
       - #### View
-          User will be able to view all exercises and foods along with the recommendations on the home page. 
+          User will be able to view all exercises and foods on the workout levels and food lists. 
             
             - View Exercises 
-                User will be able to view exercises on the home page. 
+                User will be able to view exercises on each level. 
             
              - View Foods 
-                User will be able to view foods on the home page. 
+                User will be able to view foods on the each food list. 
          
        - #### Search
             
-        -Search Exercises 
+        -  Search Exercises 
             User will be able to search for different exercises from the search bar above the exercises. 
         -  Search Foods 
             User will be able to search for different foods from the search bar above the foods. 
