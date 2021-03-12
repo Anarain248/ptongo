@@ -101,7 +101,7 @@ PtonGo is a fitness application game that allows users to have a fun fitness exp
 
 ## Conclusion 
 
-PTonGo is designed to make fitness fun for users with levels of workouts that will be challenge them along with healthy foods that they can easily track. The purpose of this app is allow for a fun user experience and make fitness a lifestyle!
+PTonGo is designed to make fitness fun for users with levels of workouts that will be challenge them along with healthy foods that can take out any guess work for consistent nutrition. The purpose of this app is allow for a fun user experience and make fitness a lifestyle!
         
           
       
