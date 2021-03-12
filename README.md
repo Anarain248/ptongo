@@ -1,4 +1,4 @@
-![](https://user-images.githubusercontent.com/70171739/111010293-b19c3880-835b-11eb-8327-364ba0a9d502.png)
+![](https://user-images.githubusercontent.com/70171739/111010405-0b046780-835c-11eb-8cbc-f7ee95fa2a2d.png)
 # PTonGo
 
 
