@@ -29,6 +29,10 @@
 
 PtonGo is a fitness application game that allows users to have a fun fitness experience. There are 10 levels with varying levels of difficulty and a timer to time their workouts. There is also a healthy foods section which gives users the exact calories and macronutrients for a variety of foods. 
 
+## Demo
+
+![Home Page](https://user-images.githubusercontent.com/70171739/111001802-1189e380-834a-11eb-9259-c2b36b860be4.gif)
+
 
 
 ## Wireframes
