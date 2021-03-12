@@ -1,11 +1,12 @@
 # PTonGo
 
-##WireFrames 
-![](https://user-images.githubusercontent.com/70171739/110978154-a4b22180-8328-11eb-83cd-1cd1aa60d94f.png)
+
+
 
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Wireframes](#wireframes)
 - [Dependencies](#dependencies)
 - [Features](#features)
 	- [User Experience](#userexperience)
@@ -26,6 +27,12 @@
 ## Introduction
 
 PtonGo is a fitness application game that allows users to have a fun fitness experience. There are 10 levels with varying levels of difficulty and a timer to time their workouts. There is also a healthy foods section which gives users the exact calories and macronutrients for a variety of foods. 
+
+## Wireframes
+
+![](https://user-images.githubusercontent.com/70171739/110978154-a4b22180-8328-11eb-83cd-1cd1aa60d94f.png)
+![](https://user-images.githubusercontent.com/70171739/110978421-fbb7f680-8328-11eb-89d8-ebc260721374.png)
+![](https://user-images.githubusercontent.com/70171739/110978452-07a3b880-8329-11eb-9a87-3c977905adf3.png)
 
 ## Dependencies 
 
