@@ -23,6 +23,7 @@
 	- [Search](#search)
 	  - [Search Exercises](#search-exercise)
 	  - [Search Foods](#search-food)
+-[Conclusion](#conclusion)
 
 
 ## Introduction
@@ -96,6 +97,10 @@ PtonGo is a fitness application game that allows users to have a fun fitness exp
 	    
             -  Search Foods 
            	 	User will be able to search for different foods from the search bar above the foods. 
+
+## Conclusion 
+
+PTonGo is designed to make fitness fun for users with levels of workouts that will be challenge them along with healthy foods that they can easily track. The purpose of this app is allow for a fun user experience and make fitness a lifestyle!
         
           
       
