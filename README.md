@@ -32,7 +32,8 @@ PtonGo is a fitness application game that allows users to have a fun fitness exp
 
 ![](https://user-images.githubusercontent.com/70171739/110978154-a4b22180-8328-11eb-83cd-1cd1aa60d94f.png)
 ![](https://user-images.githubusercontent.com/70171739/110978421-fbb7f680-8328-11eb-89d8-ebc260721374.png)
-![](https://user-images.githubusercontent.com/70171739/110978452-07a3b880-8329-11eb-9a87-3c977905adf3.png)
+![](https://user-images.githubusercontent.com/70171739/110978609-39b51a80-8329-11eb-97a5-78e930de4597.png)
+
 
 ## Dependencies 
 
