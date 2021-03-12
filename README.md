@@ -32,7 +32,17 @@ PtonGo is a fitness application game that allows users to have a fun fitness exp
 ## Demo
 
 ![Home Page](https://user-images.githubusercontent.com/70171739/111001802-1189e380-834a-11eb-9259-c2b36b860be4.gif)
-
+### Home Screen to start game.
+![Levels Screen](https://user-images.githubusercontent.com/70171739/111002190-94ab3980-834a-11eb-893c-1fe6eeb4f7da.gif)
+### Select Level to view workout. 
+![Level](https://user-images.githubusercontent.com/70171739/111002369-ece23b80-834a-11eb-9856-0fb0fbbdcd12.gif)
+### View exercises, complete them as you progress in the workout, and search for exercises within the workout.
+![Timer](https://user-images.githubusercontent.com/70171739/111002506-316dd700-834b-11eb-9224-c34fc77ba46c.gif)
+### Use timer to time your workout and know when to move onto next level by completing workout within the goal time. 
+![Foods](https://user-images.githubusercontent.com/70171739/111002658-709c2800-834b-11eb-887a-a477fb94df0c.gif)
+### View foods full calories and macronutrient profile based on list selected along with searching for specific foods within the list for convenience. 
+![Faqs](https://user-images.githubusercontent.com/70171739/111002768-97f2f500-834b-11eb-89dc-83b5e6378ebb.gif)
+### See frequently asked questions to know how to use application. 
 
 
 ## Wireframes
