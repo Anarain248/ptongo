@@ -5,7 +5,7 @@ def seed_foodtwo():
     data = Foodtwo(name='Chicken',
      primarymacro='Protein',
      totalmacros='40 grams Protein per cup',
-     totalcalories='335 calories per apple')
+     totalcalories='335 calories per cup')
 
     data2 = Foodtwo(name='Turkey',
      primarymacro='Protein',
