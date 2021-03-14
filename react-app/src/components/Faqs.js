@@ -7,6 +7,7 @@ const Faqs = () => {
         <img className="logo" src={logo}/>
         <div className="faqpage">
 
+
               <h1 className="title"><HelpOutlineIcon />Frequently Asked Questions<HelpOutlineIcon /></h1>
               <div className="q1">
               <h2>What is the point of PTonGo?</h2>
