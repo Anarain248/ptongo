@@ -1,26 +1,61 @@
+![](https://user-images.githubusercontent.com/70171739/111010405-0b046780-835c-11eb-8cbc-f7ee95fa2a2d.png)
 # PTonGo
+
+
+
 
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Demo](#demo)
+- [Wireframes](#wireframes)
 - [Dependencies](#dependencies)
 - [Features](#features)
 	- [User Experience](#userexperience)
-		- [Add Exercises](#add-exercise)
-		- [Add Foods](#add-food)
-		- [Learn about Exercises](#learn-exercise)
-		- [Learn about Foods](#learn-food)
-		- [View](#view)
-			- [View Exercises](#view-exercises)
-			- [View Foods](#view-foods)
+		- [Select Levels](#select-levels)
+		- [Complete Exercise](#complete-exercise)
+		- [Start Timer](#start-timer)
+		- [Pause Timer](#pause-timer)
+		- [Reset Timer](#reset-timer)
+		- [Select Macronutrient list](#select-macronutrientlist)
+	- [View](#view)
+		- [View Exercises](#view-exercises)
+		- [View Foods](#view-foods)
 	- [Search](#search)
 	  - [Search Exercises](#search-exercise)
 	  - [Search Foods](#search-food)
 
+- [Live Link](#livelink)
+	 
+- [Conclusion](#conclusion)
+
 
 ## Introduction
 
-PtonGo is a fitness application that allows users to learn about different exercises and foods. The main purpose of the application is to educate users on details about the various popular exercises and foods so that they can create their own workout as well as meal plan. This application takes all the guess work out and allows users to feel confident in accomplishing their fitness goals. 
+PtonGo is a fitness application game that allows users to have a fun fitness experience. There are 10 levels with varying levels of difficulty and a timer to time their workouts. There is also a healthy foods section which gives users the exact calories and macronutrients for a variety of foods. 
+
+## Demo
+#### Home Screen to start game.
+![Home Page](https://user-images.githubusercontent.com/70171739/111001802-1189e380-834a-11eb-9259-c2b36b860be4.gif)
+#### Select Level to view workout. 
+![Levels Screen](https://user-images.githubusercontent.com/70171739/111002190-94ab3980-834a-11eb-893c-1fe6eeb4f7da.gif)
+#### View exercises, complete them as you progress in the workout, and search for exercises within the workout.
+![Level](https://user-images.githubusercontent.com/70171739/111002369-ece23b80-834a-11eb-9856-0fb0fbbdcd12.gif)
+#### Use timer to time your workout and know when to move onto next level by completing workout within the goal time. 
+![Timer](https://user-images.githubusercontent.com/70171739/111002506-316dd700-834b-11eb-9224-c34fc77ba46c.gif)
+#### View foods full calories and macronutrient profile based on list selected along with searching for specific foods within the list for convenience.
+![Foods](https://user-images.githubusercontent.com/70171739/111002658-709c2800-834b-11eb-887a-a477fb94df0c.gif)
+#### See frequently asked questions to know how to use application. 
+![Faqs](https://user-images.githubusercontent.com/70171739/111002768-97f2f500-834b-11eb-89dc-83b5e6378ebb.gif)
+
+
+
+## Wireframes
+
+![](https://user-images.githubusercontent.com/70171739/110978154-a4b22180-8328-11eb-83cd-1cd1aa60d94f.png)
+![](https://user-images.githubusercontent.com/70171739/110978421-fbb7f680-8328-11eb-89d8-ebc260721374.png)
+![](https://user-images.githubusercontent.com/70171739/110978609-39b51a80-8329-11eb-97a5-78e930de4597.png)
+
 
 ## Dependencies 
 
@@ -32,35 +67,47 @@ PtonGo is a fitness application that allows users to learn about different exerc
 ## Features 
 
   - ### User Experience 
-      Any user will be able to start learning more about exercises and foods. User will be able to add them and delete them by their choice if they want to learn more or are no longer wanting to learn about the exercise or food. 
+      Any user will have access to the 10 levels and start the workouts along with having access to the food lists.   
       
-      - ### Add Exercises 
-          A user will be able to add exercises on the home page based on the exercise, exercise type, muscle group, and reps.
+      - ### Select Levels 
+          A user will be able to select levels of their choice and there will be a different workout for each level. 
           
-      - ### Add Foods 
-           A user will be able to add foods on the home page based on the food, macro type, total macros, and total calories.
+      - ### Complete Exercise 
+           A user will be able to delete exercises as they complete them to track the progress of their workout with a complete exercise button.
            
-      - ### Learn about Exercises 
-          A user will be able to learn more details about each Exercise on the home page. 
+      - ### Start Timer
+          A user will be able to start the timer in a workout by clicking the start button.
           
-       - ### Learn about Foods 
-          A user will be able to learn more details about each Food on the home page. 
+       - ### Pause Timer 
+          A user will be able to pause the timer in a workout by clicking the pause button.
+	  
+       - ### Reset Timer 
+          A user will be able to rest the timer in a workout by clicking the reset button.
           
       - #### View
-          User will be able to view all exercises and foods along with the recommendations on the home page. 
+          User will be able to view all exercises and foods on the workout levels and food lists. 
             
             - View Exercises 
-                User will be able to view exercises on the home page. 
+                User will be able to view exercises on each level. 
             
-             - View Foods 
-                User will be able to view foods on the home page. 
+            - View Foods 
+                User will be able to view foods on the each food list. 
          
-       - #### Search
+      - #### Search
+       	   User will be able to search for exercises and foods to help them navigate to certain ones.
             
-        -Search Exercises 
-            User will be able to search for different exercises from the search bar above the exercises. 
-        -  Search Foods 
-            User will be able to search for different foods from the search bar above the foods. 
+            -  Search Exercises 
+            	 User will be able to search for different exercises from the search bar above the exercises. 
+	    
+            -  Search Foods 
+           	 	User will be able to search for different foods from the search bar above the foods. 
+## Live Link 
+
+https://ptongo.herokuapp.com/
+
+## Conclusion 
+
+PTonGo is designed to make fitness fun for users with levels of workouts that will be challenge them along with healthy foods that can take out any guess work for consistent nutrition. The purpose of this app is allow for a fun user experience and make fitness a lifestyle!
         
           
       
