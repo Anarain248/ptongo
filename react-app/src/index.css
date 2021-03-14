@@ -132,7 +132,7 @@
   }
 .faqpage {
     text-align: left;
-      padding: 10px;
+      padding: 20px;
     margin-top: 30px;
     margin-bottom: 50px;
     position: relative;
@@ -179,6 +179,7 @@
     text-decoration: none;
     padding: 10px;
 }
+
 .button2 {
         text-decoration: none;
         padding: 5px;
@@ -301,4 +302,45 @@ margin-left: 30px;
 
 .logo {
     margin-top: 50px;
+}
+
+.q1 {
+    padding: 10px;
+
+}
+
+.q2 {
+    padding: 10px;
+}
+
+.q3 {
+    padding: 10px;
+}
+
+.q4 {
+    padding: 10px;
+}
+
+.q5 {
+    padding: 10px;
+}
+
+.q6 {
+    padding: 10px;
+}
+
+.q7 {
+    padding: 10px;
+}
+
+.q8 {
+    padding: 10px;
+}
+
+.q9 {
+    padding: 10px;
+}
+
+.q10 {
+    padding: 10px;
 }
